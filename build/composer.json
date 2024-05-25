@@ -1,0 +1,10 @@
+{
+    "require": {
+        "mistic100/randomcolor": "^1.0"
+    },
+    "autoload" : {
+        "classmap": [
+            "../app"
+        ]
+    }
+}
