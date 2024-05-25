@@ -35,7 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "initialize-project",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/laragon/www/BangerTacos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716647174157</updated>
       <workItem from="1716647175281" duration="739000" />
-      <workItem from="1716664794029" duration="609000" />
+      <workItem from="1716664794029" duration="926000" />
     </task>
     <servers />
   </component>
