@@ -1,0 +1,103 @@
+/* ELEMENTS Generaux à la page */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+/* PARTIE Header */
+
+header #logo {
+    width: 22vw;
+    float: left;
+}
+
+header #iconMenu {
+    margin-top: 1vh;
+    margin-right: 3vw;
+    width: 16vw;
+    float: right;
+}
+
+/* PARTIE En dessous du header */
+
+.sub-header img{
+    z-index: 1;
+    width: 100%;
+}
+
+.sub-header h1{
+    text-align: center;
+    color: white;
+    margin-top: -25vh;
+    z-index: 2;
+    font-size: 20vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sub-header span{
+    color: #FFD362;
+}
+
+
+/* PARTIE Milieu de page */
+
+.mid-page{
+    margin-top: 8vh;
+}
+
+.mid-page h1{
+    font-size: 7vw;
+    margin-left: 5vw;
+    font-style: italic;
+}
+
+.mid-page h1::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1vh;
+    border-radius: 30px;
+    background-color: #FFD362;
+}
+
+.mid-page p{
+    text-align: center;
+    padding: 8vw;
+}
+
+.mid-page p:nth-child(3){
+    margin-top: -6vh;
+}
+
+.mid-page p:nth-child(4){
+    margin-top: -6vh;
+}
+
+.mid-page span{
+    color: #FFB800;
+}
+
+.mid-page li{
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 1vh;
+}
+
+/* PARTIE Footer */
+
+footer h4{
+    text-align: center;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+}
