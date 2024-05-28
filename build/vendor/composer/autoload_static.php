@@ -43,6 +43,8 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Controllers\\HomeController' => __DIR__ . '/../..' . '/../app/Controllers/HomeController.php',
+        'Controllers\\IController' => __DIR__ . '/../..' . '/../app/Controllers/IController.php',
         'Exceptions\\RouteNotFoundException' => __DIR__ . '/../..' . '/../app/Exceptions/RouteNotFoundException.php',
         'PHPUnit\\Event\\Application\\Finished' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Finished.php',
         'PHPUnit\\Event\\Application\\FinishedSubscriber' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php',
@@ -998,6 +1000,7 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'Renderer\\Renderer' => __DIR__ . '/../..' . '/../app/Renderer/Renderer.php',
         'Router\\Router' => __DIR__ . '/../..' . '/../app/Router/Router.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
