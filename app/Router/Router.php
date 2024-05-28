@@ -12,7 +12,7 @@ class Router
     {
         return $this->routes;
     }
-    public function register(string $HTTPVerb, string $path, array $action)
+    public function register(string $HTTPVerb, string $path, array $action) : void
     {
         $this->routes[$HTTPVerb][$path] = $action;
     }
@@ -30,6 +30,6 @@ class Router
             $class = new $className();
             return call_user_func([$class, $methodName], []);
         }
-        throw new RouteNotFoundException('Route not found !');
+        throw new RouteNotFoundException();
     }
 }

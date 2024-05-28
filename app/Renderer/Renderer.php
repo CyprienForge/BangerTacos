@@ -4,7 +4,7 @@ namespace Renderer;
 
 class Renderer
 {
-    public function __construct(private string $viewPath, private ?array $params){echo $this;}
+    public function __construct(private readonly string $viewPath, private ?array $params){echo $this;}
 
     public function view() : string
     {

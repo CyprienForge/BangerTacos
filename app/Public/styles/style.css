@@ -89,6 +89,7 @@ header #iconMenu {
 /* PARTIE Footer */
 
 footer h4{
+    font-size: 3vw;
     text-align: center;
     font-weight: lighter;
     padding: 0;
@@ -100,4 +101,16 @@ footer{
     background-color: black;
     width: 100%;
     bottom: 0;
+    height: auto;
+}
+
+footer #instagram-logo{
+    float: left;
+    width: 14vw;
+    margin-top: 0.5vh;
+}
+
+footer #facebook-logo{
+    float: right;
+    width: 10vw;
 }

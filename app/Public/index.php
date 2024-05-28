@@ -13,7 +13,7 @@ try
 {
     $router->createRoute($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 }
-catch (RouteNotFoundException $e)
+catch(RouteNotFoundException $e)
 {
     echo $e->getMessage();
 }

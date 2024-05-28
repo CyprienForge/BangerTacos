@@ -41,7 +41,9 @@
     </section>
 
     <footer>
-        <h4>Créé par FORGE Cyprien</h4>
+        <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">
+        <img id="facebook-logo" src="http://127.0.0.1:8000/images/facebookIcon.png" alt="Logo de Facebook">
+        <h4>@BangerTacos - 2019<br>Créé par FORGE Cyprien</h4>
     </footer>
 </body>
 </html>
