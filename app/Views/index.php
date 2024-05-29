@@ -18,15 +18,19 @@
                     <img id="quit" src="http://127.0.0.1:8000/images/quitMenu.png" alt="Icon d'hamburger pour le menu déroulant">
                 </li>
                 <li>
-                    <a href="#">Notre carte</a>
+                    <img id="illustration" src="http://127.0.0.1:8000/images/tacosIcon.png" alt="Icon de tacos">
+                    <a href="/carte">Notre carte</a>
                 </li>
                 <li>
+                    <img id="illustration" src="http://127.0.0.1:8000/images/panierIcon.png" alt="Icon de caddie">
                     <a href="#">Mon panier</a>
                 </li>
                 <li>
+                    <img id="illustration" src="http://127.0.0.1:8000/images/compteIcon.png" alt="Icon de buste">
                     <a href="#">Mon compte</a>
                 </li>
                 <li>
+                    <img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact">
                     <a href="#">Contact</a>
                 </li>
             </ul>

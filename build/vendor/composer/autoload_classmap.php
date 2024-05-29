@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Controllers\\CarteController' => $baseDir . '/../app/Controllers/CarteController.php',
     'Controllers\\HomeController' => $baseDir . '/../app/Controllers/HomeController.php',
     'Controllers\\IController' => $baseDir . '/../app/Controllers/IController.php',
     'Exceptions\\RouteNotFoundException' => $baseDir . '/../app/Exceptions/RouteNotFoundException.php',
