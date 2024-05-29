@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
+    <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <title>BangerTacos</title>
 </head>
 <body>
@@ -10,6 +11,26 @@
     <header>
         <img id="logo" src="http://127.0.0.1:8000/images/logo.png" alt="Logo de BangerTacos">
         <img id="iconMenu" src="http://127.0.0.1:8000/images/burgerMenu.png" alt="Icon d'hamburger pour le menu déroulant">
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <img id="quit" src="http://127.0.0.1:8000/images/quitMenu.png" alt="Icon d'hamburger pour le menu déroulant">
+                </li>
+                <li>
+                    <a href="#">Notre carte</a>
+                </li>
+                <li>
+                    <a href="#">Mon panier</a>
+                </li>
+                <li>
+                    <a href="#">Mon compte</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="sub-header">

@@ -13,11 +13,13 @@ header #logo {
     float: left;
 }
 
-header #iconMenu {
+#iconMenu {
+    display: none;
     margin-top: 1vh;
     margin-right: 3vw;
     width: 16vw;
     float: right;
+    cursor: pointer;
 }
 
 /* PARTIE En dessous du header */
@@ -30,8 +32,8 @@ header #iconMenu {
 .sub-header h1{
     text-align: center;
     color: white;
-    margin-top: -25vh;
     z-index: 2;
+    margin-top: -50vw;
     font-size: 20vw;
     font-weight: bold;
     font-style: italic;
@@ -41,6 +43,79 @@ header #iconMenu {
     color: #FFD362;
 }
 
+/* BURGER Menu */
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+
+#quit{
+    visibility: hidden;
+    width: 4vw;
+    cursor: pointer;
+    padding: 0
+}
+
+@media (max-width: 650px){
+
+    #iconMenu{
+        display: block;
+        float: right;
+        margin-top: 3vw;
+    }
+    nav ul{
+        position: fixed;
+        right: 100%;
+        top: 5%;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        transition: 0.2s all ease;
+    }
+    nav li{
+        padding: 3px 0;
+    }
+
+    nav.active a{
+        padding: -100px;
+    }
+    nav.active ul{
+        margin-top: -4vw;
+        right: 0;
+        position: fixed;
+    }
+    nav.active #quit {
+        visibility: visible;
+    }
+}
 
 /* PARTIE Milieu de page */
 
