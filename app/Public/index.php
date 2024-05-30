@@ -9,6 +9,7 @@ $router = new Router();
 
 $router->register('GET','/',['Controllers\HomeController','index']);
 $router->register('GET','/carte', ['Controllers\CarteController','index']);
+
 try
 {
     $router->createRoute($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
