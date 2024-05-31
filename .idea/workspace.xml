@@ -7,7 +7,8 @@
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +128,7 @@
       <workItem from="1716995856471" duration="4992000" />
       <workItem from="1717007057996" duration="2890000" />
       <workItem from="1717091068929" duration="1255000" />
+      <workItem from="1717151647762" duration="563000" />
     </task>
     <servers />
   </component>
