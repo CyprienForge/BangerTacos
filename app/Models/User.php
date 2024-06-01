@@ -52,4 +52,16 @@ class User extends Model
         $query->execute([$firstName, $surName, $email, $phone, $password]);
     }
 
+    public function isEmailAvailable(string $email) : bool
+    {
+        $query = $this->getPDO()->prepare("SELECT count(*) as counter FROM {$this->table} WHERE email = ?;");
+        $query->execute([$email]);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+
+        if($result[0]['counter'] > 0)
+        {
+            return false;
+        }
+        return true;
+    }
 }

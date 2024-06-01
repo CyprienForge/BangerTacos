@@ -25,7 +25,8 @@ class Register
             && $this->isEmailValid()
             && $this->isPhoneValid()
             && $this->isPasswordValid()
-            && $this->isSamePassword();
+            && $this->isSamePassword()
+            && $this->isEmailAvailable();
     }
     public function isFirstNameValid(): bool
     {
@@ -63,5 +64,12 @@ class Register
     public function isSamePassword(): bool
     {
         return $this->password === $this->repeatPaswword;
+    }
+
+    public function isEmailAvailable(): bool
+    {
+        $user = new User();
+
+        return $user->isEmailAvailable($this->email);
     }
 }

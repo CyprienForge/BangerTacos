@@ -7,12 +7,14 @@
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Classes/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Constants.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/connection.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/connection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tests/Units/RouterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tests/Units/RouterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,21 +80,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;advance-connection-registration&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "PHPUnit.RegisterTest.test_isFirstNameValid.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "advance-connection-registration",
+    "last_opened_file_path": "C:/Users/cypri/OneDrive/Bureau/BangerTacos",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
@@ -104,11 +107,20 @@
       <recent name="C:\laragon\www\BangerTacos\build" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.RegisterTest.test_isFirstNameValid">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/build/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
+    <configuration name="RegisterTest.test_isFirstNameValid" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Units\RegisterTest" configuration_file="$PROJECT_DIR$/build/phpunit.xml" file="$PROJECT_DIR$/app/Tests/Units/RegisterTest.php" method="test_isFirstNameValid" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.RegisterTest.test_isFirstNameValid" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,6 +149,8 @@
       <workItem from="1717245977764" duration="10000" />
       <workItem from="1717245989381" duration="7764000" />
       <workItem from="1717259843602" duration="2282000" />
+      <workItem from="1717262382840" duration="137000" />
+      <workItem from="1717268009235" duration="3214000" />
     </task>
     <servers />
   </component>
