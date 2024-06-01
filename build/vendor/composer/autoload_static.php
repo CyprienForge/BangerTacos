@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
+class ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -42,11 +42,17 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
     );
 
     public static $classMap = array (
+        'Classes\\Register' => __DIR__ . '/../..' . '/../app/Classes/Register.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Controllers\\CarteController' => __DIR__ . '/../..' . '/../app/Controllers/CarteController.php',
+        'Controllers\\ConnectionController' => __DIR__ . '/../..' . '/../app/Controllers/ConnectionController.php',
         'Controllers\\HomeController' => __DIR__ . '/../..' . '/../app/Controllers/HomeController.php',
         'Controllers\\IController' => __DIR__ . '/../..' . '/../app/Controllers/IController.php',
+        'Controllers\\RegistrationController' => __DIR__ . '/../..' . '/../app/Controllers/RegistrationController.php',
         'Exceptions\\RouteNotFoundException' => __DIR__ . '/../..' . '/../app/Exceptions/RouteNotFoundException.php',
+        'Models\\Constants' => __DIR__ . '/../..' . '/../app/Models/Constants.php',
+        'Models\\Model' => __DIR__ . '/../..' . '/../app/Models/Model.php',
+        'Models\\User' => __DIR__ . '/../..' . '/../app/Models/User.php',
         'PHPUnit\\Event\\Application\\Finished' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Finished.php',
         'PHPUnit\\Event\\Application\\FinishedSubscriber' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php',
         'PHPUnit\\Event\\Application\\Started' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Started.php',
@@ -1220,9 +1226,9 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86::$classMap;
 
         }, null, ClassLoader::class);
     }

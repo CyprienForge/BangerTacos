@@ -9,6 +9,9 @@ $router = new Router();
 
 $router->register('GET','/',['Controllers\HomeController','index']);
 $router->register('GET','/carte', ['Controllers\CarteController','index']);
+$router->register('GET', '/connection', ['Controllers\ConnectionController','index']);
+$router->register('GET', '/registration', ['Controllers\RegistrationController','index']);
+$router->register('POST', '/registration', ['Controllers\RegistrationController','index']);
 
 try
 {

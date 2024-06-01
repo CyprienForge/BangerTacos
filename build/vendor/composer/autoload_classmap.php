@@ -6,11 +6,17 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Classes\\Register' => $baseDir . '/../app/Classes/Register.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Controllers\\CarteController' => $baseDir . '/../app/Controllers/CarteController.php',
+    'Controllers\\ConnectionController' => $baseDir . '/../app/Controllers/ConnectionController.php',
     'Controllers\\HomeController' => $baseDir . '/../app/Controllers/HomeController.php',
     'Controllers\\IController' => $baseDir . '/../app/Controllers/IController.php',
+    'Controllers\\RegistrationController' => $baseDir . '/../app/Controllers/RegistrationController.php',
     'Exceptions\\RouteNotFoundException' => $baseDir . '/../app/Exceptions/RouteNotFoundException.php',
+    'Models\\Constants' => $baseDir . '/../app/Models/Constants.php',
+    'Models\\Model' => $baseDir . '/../app/Models/Model.php',
+    'Models\\User' => $baseDir . '/../app/Models/User.php',
     'PHPUnit\\Event\\Application\\Finished' => $vendorDir . '/phpunit/phpunit/src/Event/Events/Application/Finished.php',
     'PHPUnit\\Event\\Application\\FinishedSubscriber' => $vendorDir . '/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php',
     'PHPUnit\\Event\\Application\\Started' => $vendorDir . '/phpunit/phpunit/src/Event/Events/Application/Started.php',

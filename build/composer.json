@@ -1,6 +1,7 @@
 {
     "require": {
-        "mistic100/randomcolor": "^1.0"
+        "mistic100/randomcolor": "^1.0",
+        "ext-pdo": "*"
     },
     "autoload" : {
         "classmap": [

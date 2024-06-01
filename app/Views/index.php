@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/styles/index.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <title>BangerTacos</title>
 </head>
@@ -23,11 +24,11 @@
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/panierIcon.png" alt="Icon de caddie">
-                    <a href="#">Mon panier</a>
+                    <a href="/connexion">Mon panier</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/compteIcon.png" alt="Icon de buste">
-                    <a href="#">Mon compte</a>
+                    <a href="/connexion">Mon compte</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact">

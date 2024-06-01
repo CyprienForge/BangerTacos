@@ -1,0 +1,29 @@
+
+/* PARTIE Milieu de page */
+
+.mid-page{
+    margin-top: 8vh;
+}
+
+.mid-page p{
+    text-align: center;
+    padding: 8vw;
+}
+
+.mid-page p:nth-child(3){
+    margin-top: -6vh;
+}
+
+.mid-page p:nth-child(4){
+    margin-top: -6vh;
+}
+
+.mid-page span{
+    color: #FFB800;
+}
+
+.mid-page li{
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 1vh;
+}
