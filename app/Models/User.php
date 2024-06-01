@@ -9,21 +9,13 @@ class User extends Model
     private string $firstName;
     private string $surName;
     private string $email;
-    private string $phone;
+    private ?string $phone;
     private string $password;
     private int $loyaltyPoints;
 
     public function hashPassword(string $password)
     {
         return password_hash($password, PASSWORD_DEFAULT);
-    }
-    public function addUser(string $firstName, string $surName, string $email, ?string $phone, string $password) : void
-    {
-        $password = $this->hashPassword($password);
-        $query = $this->getPDO()->prepare
-        ("INSERT INTO {$this->table} ('firstName','surName', 'email', 'phone', 'password', 'loyaltyPoints') 
-                VALUES(?, ?, ?, ?, ?, 0);");
-        $query->execute([$firstName, $surName, $email, $phone, $password]);
     }
     public function getId(): int
     {
@@ -53,4 +45,11 @@ class User extends Model
     {
         return $this->loyaltyPoints;
     }
+    public function addUser(string $firstName, string $surName, string $email, string $password, ?string $phone) : void
+    {
+        $password = $this->hashPassword($password);
+        $query = $this->getPDO()->prepare("INSERT INTO {$this->table} (firstName, surName, email, phone, password, loyaltyPoints) VALUES(?, ?, ?, ?, ?, 0);");
+        $query->execute([$firstName, $surName, $email, $phone, $password]);
+    }
+
 }

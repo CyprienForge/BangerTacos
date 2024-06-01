@@ -24,11 +24,11 @@
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/panierIcon.png" alt="Icon de caddie">
-                    <a href="/connexion">Mon panier</a>
+                    <a href="/connection">Mon panier</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/compteIcon.png" alt="Icon de buste">
-                    <a href="/connexion">Mon compte</a>
+                    <a href="/connection">Mon compte</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact">

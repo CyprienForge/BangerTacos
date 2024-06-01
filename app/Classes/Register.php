@@ -1,6 +1,7 @@
 <?php
 
 namespace Classes;
+use Models\Model;
 use Models\User;
 
 class Register
@@ -11,7 +12,7 @@ class Register
     public function register() : bool
     {
         if(!$this->isRegisterValid()) return false;
-
+        $model = new Model();
         $user = new User();
         $user->addUser($this->firstName, $this->surName, $this->email, $this->phone, $this->password);
 

@@ -52,7 +52,7 @@
         <br>
         <input id="champ" type="email" name="email" placeholder="Votre email" required pattern="^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$">
         <br>
-        <input id="champ" type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)">
+        <input id="champ" type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)" required>
         <br>
         <input id="champ" type="password" name="password" placeholder="Votre mot de passe" required>
         <br>
