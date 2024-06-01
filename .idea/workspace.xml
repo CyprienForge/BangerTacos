@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BangerTacos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BangerTacos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +17,9 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/build/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,6 +27,7 @@
         <option value="Dockerfile" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,6 +38,32 @@
     <include_path>
       <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
       <path value="$PROJECT_DIR$/build/vendor/composer" />
+      <path value="$PROJECT_DIR$/build/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/build/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/build/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/build/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/build/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-code-coverage" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -53,26 +74,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "create-views",
-    "last_opened_file_path": "C:/laragon/www/BangerTacos",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;link-router-homepage-view&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos/app/Public/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app" />
       <recent name="C:\laragon\www\BangerTacos\app\Public\Views" />
       <recent name="C:\laragon\www\BangerTacos\build" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/build/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -93,6 +124,11 @@
       <workItem from="1716647175281" duration="739000" />
       <workItem from="1716664794029" duration="1048000" />
       <workItem from="1716665886398" duration="3462000" />
+      <workItem from="1716921091224" duration="4197000" />
+      <workItem from="1716995856471" duration="4992000" />
+      <workItem from="1717007057996" duration="2890000" />
+      <workItem from="1717091068929" duration="1255000" />
+      <workItem from="1717151647762" duration="563000" />
     </task>
     <servers />
   </component>

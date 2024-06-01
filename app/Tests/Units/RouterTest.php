@@ -11,7 +11,6 @@ class RouterTest extends TestCase
         $router = new Router();
         $this->assertEmpty($router->getRoutes());
     }
-
     public function test_it_register_get_routes() : void
     {
         $router = new Router();
@@ -19,7 +18,6 @@ class RouterTest extends TestCase
 
         $this->assertNotEmpty($router->getRoutes());
     }
-
     public function test_it_register_post_routes() : void
     {
         $router = new Router();
