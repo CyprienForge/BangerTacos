@@ -52,7 +52,7 @@
         <br>
         <input id="champ" type="email" name="email" placeholder="Votre email" required pattern="^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$">
         <br>
-        <input id="champ" type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)">
+        <input id="champ" type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)" required>
         <br>
         <input id="champ" type="password" name="password" placeholder="Votre mot de passe" required>
         <br>
@@ -64,6 +64,7 @@
 </section>
 
 <?php
+
     use Classes\Register;
     if(!empty($_POST['email']) && !empty($_POST['password'])){
         $register = new Register($_POST['firstName'], $_POST['surName'], $_POST['email'], $_POST['phone'],
@@ -80,7 +81,7 @@
 <footer>
     <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">
     <img id="facebook-logo" src="http://127.0.0.1:8000/images/facebookIcon.png" alt="Logo de Facebook">
-    <h4>@BangerTacos - 2019<br>Créé par FORGE Cyprien</h4>
+    <h4>@BangerTacos - 2024<br>Créé par FORGE Cyprien</h4>
 </footer>
 
 </body>

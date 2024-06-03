@@ -1212,7 +1212,6 @@ class ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'Tests\\Units\\RouterTest' => __DIR__ . '/../..' . '/../app/Tests/Units/RouterTest.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -1221,6 +1220,8 @@ class ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Units\\RegisterTest' => __DIR__ . '/../..' . '/../app/Tests/Units/RegisterTest.php',
+        'Units\\RouterTest' => __DIR__ . '/../..' . '/../app/Tests/Units/RouterTest.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

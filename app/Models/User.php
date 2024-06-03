@@ -9,21 +9,13 @@ class User extends Model
     private string $firstName;
     private string $surName;
     private string $email;
-    private string $phone;
+    private ?string $phone;
     private string $password;
     private int $loyaltyPoints;
 
     public function hashPassword(string $password)
     {
         return password_hash($password, PASSWORD_DEFAULT);
-    }
-    public function addUser(string $firstName, string $surName, string $email, ?string $phone, string $password) : void
-    {
-        $password = $this->hashPassword($password);
-        $query = $this->getPDO()->prepare
-        ("INSERT INTO {$this->table} ('firstName','surName', 'email', 'phone', 'password', 'loyaltyPoints') 
-                VALUES(?, ?, ?, ?, ?, 0);");
-        $query->execute([$firstName, $surName, $email, $phone, $password]);
     }
     public function getId(): int
     {
@@ -52,5 +44,24 @@ class User extends Model
     public function getLoyaltyPoints(): int
     {
         return $this->loyaltyPoints;
+    }
+    public function addUser(string $firstName, string $surName, string $email, string $password, ?string $phone) : void
+    {
+        $password = $this->hashPassword($password);
+        $query = $this->getPDO()->prepare("INSERT INTO {$this->table} (firstName, surName, email, phone, password, loyaltyPoints) VALUES(?, ?, ?, ?, ?, 0);");
+        $query->execute([$firstName, $surName, $email, $phone, $password]);
+    }
+
+    public function isEmailAvailable(string $email) : bool
+    {
+        $query = $this->getPDO()->prepare("SELECT count(*) as counter FROM {$this->table} WHERE email = ?;");
+        $query->execute([$email]);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+
+        if($result[0]['counter'] > 0)
+        {
+            return false;
+        }
+        return true;
     }
 }
