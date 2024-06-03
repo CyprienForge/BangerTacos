@@ -3,7 +3,7 @@
         'name' => 'vendor/bangertacos',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ee51c1c4a0d6e94ef9715dc969251abfda794329',
+        'reference' => '1e68496eff122bc818689374a86b8380e7309f8b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -256,7 +256,7 @@
         'vendor/bangertacos' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ee51c1c4a0d6e94ef9715dc969251abfda794329',
+            'reference' => '1e68496eff122bc818689374a86b8380e7309f8b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
