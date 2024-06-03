@@ -14,5 +14,5 @@
         "phpunit/phpunit": "11"
     },
     "test" : "vendor/bin/phpunit",
-    "license": "property"
+    "license": "proprietary"
 }
