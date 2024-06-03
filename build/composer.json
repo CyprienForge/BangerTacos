@@ -1,6 +1,8 @@
 {
     "name": "vendor/bangertacos",
     "description": "It's a side project for my progression",
+    "test" : "vendor/bin/phpunit",
+    "license": "proprietary",
     "require": {
         "mistic100/randomcolor": "^1.0",
         "ext-pdo": "*"
@@ -12,7 +14,5 @@
     },
     "require-dev": {
         "phpunit/phpunit": "11"
-    },
-    "test" : "vendor/bin/phpunit",
-    "license": "proprietary"
+    }
 }
