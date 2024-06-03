@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f750d1a9cd611b1ffb931ff4015d2e86",
+    "content-hash": "b716d6101445bf28e6921ae873412687",
     "packages": [
         {
             "name": "mistic100/randomcolor",
@@ -1689,7 +1689,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
