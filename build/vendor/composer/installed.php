@@ -1,24 +1,15 @@
 <?php return array(
     'root' => array(
-        'name' => '__root__',
+        'name' => 'vendor/bangertacos',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b724a1faeae1294e3b8284788a39062a272c378c',
+        'reference' => '9751cd26d38e544590bb565bdc39d162699fca5b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        '__root__' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => 'b724a1faeae1294e3b8284788a39062a272c378c',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'mistic100/randomcolor' => array(
             'pretty_version' => '1.0.6',
             'version' => '1.0.6.0',
@@ -261,6 +252,15 @@
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'vendor/bangertacos' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '9751cd26d38e544590bb565bdc39d162699fca5b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
     ),
 );

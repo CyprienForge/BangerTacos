@@ -1220,6 +1220,7 @@ class ComposerStaticInitf750d1a9cd611b1ffb931ff4015d2e86
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Units\\ExternalDataProvider' => __DIR__ . '/../..' . '/../app/Tests/Units/RegisterTest.php',
         'Units\\RegisterTest' => __DIR__ . '/../..' . '/../app/Tests/Units/RegisterTest.php',
         'Units\\RouterTest' => __DIR__ . '/../..' . '/../app/Tests/Units/RouterTest.php',
     );

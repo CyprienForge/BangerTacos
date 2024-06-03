@@ -1184,6 +1184,7 @@ return array(
     'TheSeer\\Tokenizer\\TokenCollectionException' => $vendorDir . '/theseer/tokenizer/src/TokenCollectionException.php',
     'TheSeer\\Tokenizer\\Tokenizer' => $vendorDir . '/theseer/tokenizer/src/Tokenizer.php',
     'TheSeer\\Tokenizer\\XMLSerializer' => $vendorDir . '/theseer/tokenizer/src/XMLSerializer.php',
+    'Units\\ExternalDataProvider' => $baseDir . '/../app/Tests/Units/RegisterTest.php',
     'Units\\RegisterTest' => $baseDir . '/../app/Tests/Units/RegisterTest.php',
     'Units\\RouterTest' => $baseDir . '/../app/Tests/Units/RouterTest.php',
 );

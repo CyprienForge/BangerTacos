@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b716d6101445bf28e6921ae873412687",
+    "content-hash": "1345669910389053a26919853fb895cb",
     "packages": [
         {
             "name": "mistic100/randomcolor",
