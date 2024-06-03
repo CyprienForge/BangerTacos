@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/php.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
