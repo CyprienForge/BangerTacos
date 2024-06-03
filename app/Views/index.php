@@ -24,11 +24,11 @@
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/panierIcon.png" alt="Icon de caddie">
-                    <a href="/connexion">Mon panier</a>
+                    <a href="/connection">Mon panier</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/compteIcon.png" alt="Icon de buste">
-                    <a href="/connexion">Mon compte</a>
+                    <a href="/connection">Mon compte</a>
                 </li>
                 <li>
                     <img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact">
@@ -69,7 +69,7 @@
     <footer>
         <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">
         <img id="facebook-logo" src="http://127.0.0.1:8000/images/facebookIcon.png" alt="Logo de Facebook">
-        <h4>@BangerTacos - 2019<br>Créé par FORGE Cyprien</h4>
+        <h4>@BangerTacos - 2024<br>Créé par FORGE Cyprien</h4>
     </footer>
 </body>
 </html>

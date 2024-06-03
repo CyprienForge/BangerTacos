@@ -1176,7 +1176,6 @@ return array(
     'SebastianBergmann\\Type\\UnknownType' => $vendorDir . '/sebastian/type/src/type/UnknownType.php',
     'SebastianBergmann\\Type\\VoidType' => $vendorDir . '/sebastian/type/src/type/VoidType.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
-    'Tests\\Units\\RouterTest' => $baseDir . '/../app/Tests/Units/RouterTest.php',
     'TheSeer\\Tokenizer\\Exception' => $vendorDir . '/theseer/tokenizer/src/Exception.php',
     'TheSeer\\Tokenizer\\NamespaceUri' => $vendorDir . '/theseer/tokenizer/src/NamespaceUri.php',
     'TheSeer\\Tokenizer\\NamespaceUriException' => $vendorDir . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -1185,4 +1184,6 @@ return array(
     'TheSeer\\Tokenizer\\TokenCollectionException' => $vendorDir . '/theseer/tokenizer/src/TokenCollectionException.php',
     'TheSeer\\Tokenizer\\Tokenizer' => $vendorDir . '/theseer/tokenizer/src/Tokenizer.php',
     'TheSeer\\Tokenizer\\XMLSerializer' => $vendorDir . '/theseer/tokenizer/src/XMLSerializer.php',
+    'Units\\RegisterTest' => $baseDir . '/../app/Tests/Units/RegisterTest.php',
+    'Units\\RouterTest' => $baseDir . '/../app/Tests/Units/RouterTest.php',
 );
