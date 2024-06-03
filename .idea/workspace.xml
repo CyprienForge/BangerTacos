@@ -7,13 +7,14 @@
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Classes/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tests/Units/RouterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tests/Units/RouterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tests/Units/RegisterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tests/Units/RegisterTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,22 +81,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "PHPUnit.RegisterTest.test_isFirstNameValid.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "advance-connection-registration",
-    "last_opened_file_path": "C:/Users/cypri/OneDrive/Bureau/BangerTacos",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;PHPUnit.RegisterTest.test_isFirstNameValid.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;advance-connection-registration&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
@@ -151,6 +152,7 @@
       <workItem from="1717259843602" duration="2282000" />
       <workItem from="1717262382840" duration="137000" />
       <workItem from="1717268009235" duration="3214000" />
+      <workItem from="1717435811687" duration="2160000" />
     </task>
     <servers />
   </component>
