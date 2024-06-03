@@ -1,4 +1,6 @@
 {
+    "name": "vendor/bangertacos",
+    "description": "It's a side project for my progression",
     "require": {
         "mistic100/randomcolor": "^1.0",
         "ext-pdo": "*"
