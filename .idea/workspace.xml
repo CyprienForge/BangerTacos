@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BangerTacos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BangerTacos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.phpunit.result.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,6 @@
       <path value="$PROJECT_DIR$/build/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/build/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/build/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/build/vendor/composer" />
       <path value="$PROJECT_DIR$/build/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/build/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/build/vendor/phpunit/php-file-iterator" />
@@ -61,7 +61,6 @@
       <path value="$PROJECT_DIR$/build/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/lines-of-code" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/version" />
@@ -70,6 +69,8 @@
       <path value="$PROJECT_DIR$/build/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/build/vendor/composer" />
+      <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -80,22 +81,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "PHPUnit.RegisterTest.test_isFirstNameValid.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/cypri/OneDrive/Bureau/BangerTacos",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;PHPUnit.RegisterTest.test_isFirstNameValid.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
@@ -152,6 +153,7 @@
       <workItem from="1717262382840" duration="137000" />
       <workItem from="1717268009235" duration="3214000" />
       <workItem from="1717435811687" duration="2755000" />
+      <workItem from="1717524055079" duration="4011000" />
     </task>
     <servers />
   </component>

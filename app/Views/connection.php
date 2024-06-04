@@ -55,6 +55,20 @@
     <a href="/registration"><p>Vous ne possédez pas de compte ? Créez en un !</p></a>
 </section>
 
+<?php
+    use Classes\Loger;
+    if(!empty($_POST['email']) && !empty($_POST['password'])){
+        $loger = new Loger($_POST['email'], $_POST['password']);
+
+        if(!$loger->login())
+        {
+            echo '<p>Connexion échouée !</p>';
+            exit(1);
+        }
+        echo '<p>Conexion réussie !</p>';
+    }
+?>
+
 <footer>
     <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">
     <img id="facebook-logo" src="http://127.0.0.1:8000/images/facebookIcon.png" alt="Logo de Facebook">

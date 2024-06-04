@@ -45,10 +45,11 @@ class User extends Model
     {
         return $this->loyaltyPoints;
     }
-    public function addUser(string $firstName, string $surName, string $email, string $password, ?string $phone) : void
+    public function addUser(string $firstName, string $surName, string $email, string $password, string $phone) : void
     {
         $password = $this->hashPassword($password);
-        $query = $this->getPDO()->prepare("INSERT INTO {$this->table} (firstName, surName, email, phone, password, loyaltyPoints) VALUES(?, ?, ?, ?, ?, 0);");
+        $query = $this->getPDO()->prepare("INSERT INTO {$this->table} (firstName, surName, email, phone, password, loyaltyPoints) 
+                                                 VALUES(?, ?, ?, ?, ?, 0);");
         $query->execute([$firstName, $surName, $email, $phone, $password]);
     }
 
@@ -63,5 +64,14 @@ class User extends Model
             return false;
         }
         return true;
+    }
+
+    public function searchPassword(string $email)
+    {
+        $query = $this->getPDO()->prepare("SELECT password FROM {$this->table} WHERE email = ?;");
+        $query->execute([$email]);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+
+        return $result[0]['password'];
     }
 }

@@ -15,7 +15,6 @@
       <path value="$PROJECT_DIR$/build/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/build/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/build/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/build/vendor/composer" />
       <path value="$PROJECT_DIR$/build/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/build/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/build/vendor/phpunit/php-file-iterator" />
@@ -31,7 +30,6 @@
       <path value="$PROJECT_DIR$/build/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/lines-of-code" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/version" />
@@ -40,6 +38,8 @@
       <path value="$PROJECT_DIR$/build/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/build/vendor/composer" />
+      <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3">

@@ -12,9 +12,9 @@ class Register
     public function register() : bool
     {
         if(!$this->isRegisterValid()) return false;
-        $model = new Model();
+
         $user = new User();
-        $user->addUser($this->firstName, $this->surName, $this->email, $this->phone, $this->password);
+        $user->addUser($this->firstName, $this->surName, $this->email, $this->password, $this->phone);
 
         return true;
     }

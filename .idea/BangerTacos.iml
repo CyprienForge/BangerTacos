@@ -5,6 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/app/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Tests/Units" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/build/vendor/mistic100/randomcolor" />
       <excludeFolder url="file://$MODULE_DIR$/build/vendor/myclabs/deep-copy" />

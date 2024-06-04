@@ -9,7 +9,6 @@ use Exceptions\RouteNotFoundException;
 
 $router = new Router();
 
-exit(1);
 $router->register('GET','/',['Controllers\HomeController','index']);
 $router->register('GET','/carte', ['Controllers\CarteController','index']);
 $router->register('GET', '/connection', ['Controllers\ConnectionController','index']);
