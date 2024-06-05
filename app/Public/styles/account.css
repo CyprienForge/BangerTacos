@@ -17,6 +17,7 @@ li{
 }
 
 .mid-page img{
+    cursor: pointer;
     margin-right: 3vw;
     margin-top: -4vw;
     float: right;
