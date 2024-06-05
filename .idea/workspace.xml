@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BangerTacos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BangerTacos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classes/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/Loger.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Loger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.phpunit.result.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,22 +78,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;PHPUnit.RegisterTest.test_isFirstNameValid.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "PHPUnit.RegisterTest.test_isFirstNameValid.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/cypri/OneDrive/Bureau/BangerTacos/app/Public/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
@@ -153,7 +150,8 @@
       <workItem from="1717262382840" duration="137000" />
       <workItem from="1717268009235" duration="3214000" />
       <workItem from="1717435811687" duration="2755000" />
-      <workItem from="1717524055079" duration="4011000" />
+      <workItem from="1717524055079" duration="4713000" />
+      <workItem from="1717600902508" duration="5269000" />
     </task>
     <servers />
   </component>

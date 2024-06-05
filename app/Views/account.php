@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
-    <link rel="stylesheet" href="http://127.0.0.1:8000/styles/connection.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/styles/account.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <title>BangerTacos</title>
 </head>
 <body>
-
 <header>
     <a href="/"><img id="logo" src="http://127.0.0.1:8000/images/logo.png" alt="Logo de BangerTacos"></a>
     <img id="iconMenu" src="http://127.0.0.1:8000/images/burgerMenu.png" alt="Icon d'hamburger pour le menu déroulant">
@@ -24,11 +23,29 @@
             </li>
             <li>
                 <img id="illustration" src="http://127.0.0.1:8000/images/panierIcon.png" alt="Icon de caddie">
-                <a href="/connexion">Mon panier</a>
+                <?php
+                if(empty($_SESSION['id']))
+                {
+                    echo "<a href=/connection>Mon panier</a>";
+                }
+                else
+                {
+                    echo "<a href='/panier?id=$id'>Mon panier</a>";
+                }
+                ?>
             </li>
             <li>
                 <img id="illustration" src="http://127.0.0.1:8000/images/compteIcon.png" alt="Icon de buste">
-                <a href="/connexion">Mon compte</a>
+                <?php
+                if(empty($_SESSION['id']))
+                {
+                    echo "<a href='/connection'>Mon compte</a>";
+                }
+                else
+                {
+                    echo "<a href='/account?id=$id'>Mon compte</a>";
+                }
+                ?>
             </li>
             <li>
                 <img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact">
@@ -39,41 +56,30 @@
 </header>
 
 <section class="sub-header">
-    <img src="http://127.0.0.1:8000/images/compteBackground.jpg" alt="Immage de fond représentant des amis qui mangent un kebab entre eux">
+    <img src="http://127.0.0.1:8000/images/compteBackground.jpg" alt="Immage de fond représentant des amis mangeant un kebab">
+    <h2>COMPTE</h2>
 </section>
 
 <section class="mid-page">
-    <h1>Connexion</h1>
+    <h3>Bonjour <span><?= $user->getFirstName(); ?> !</span></h3>
 
-    <form method="POST">
-        <input id="champ" type="email" name="email" placeholder="Votre email" required pattern="^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$">
-        <br>
-        <input id="champ" type="password" name="password" placeholder="Votre mot de passe" required>
-        <br>
-        <input id="submit" type="submit" value="Se connecter">
-    </form>
-    <a href="/registration"><p>Vous ne possédez pas de compte ? Créez en un !</p></a>
+    <h1>Récap' de mes infos !</h1>
+    <img src="http://127.0.0.1:8000/images/editer.png" alt="Icon of pen to edit a form">
+    <ul>
+        <li>NOM : <?= $user->getSurName(); ?></li>
+        <li>PRENOM : <?= $user->getFirstName(); ?> </li>
+        <li>ADRESSE MAIL : <?= $user->getEmail(); ?></li>
+        <li>N° TÉLÉPHONE : <?= $user->getPhone(); ?> </li>
+        <li>POINTS FIDÉLITÉ : <?= $user->getLoyaltyPoints(); ?> </li>
+    </ul>
 </section>
 
-<?php
-    use Classes\Loger;
-    if(!empty($_POST['email']) && !empty($_POST['password'])){
-        $loger = new Loger($_POST['email'], $_POST['password']);
-
-        if(!$loger->login())
-        {
-            echo '<p>Connexion échouée !</p>';
-            exit(1);
-        }
-        echo "<p>Conexion réussie ! Sous le mail suivant : " . $_SESSION['email'] . "</p>";
-    }
-?>
+<button>MON PANIER</button>
 
 <footer>
     <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">
     <img id="facebook-logo" src="http://127.0.0.1:8000/images/facebookIcon.png" alt="Logo de Facebook">
     <h4>@BangerTacos - 2024<br>Créé par FORGE Cyprien</h4>
 </footer>
-
 </body>
 </html>

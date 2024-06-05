@@ -74,4 +74,22 @@ class User extends Model
 
         return $result[0]['password'];
     }
+
+    public function getUserId(string $email)
+    {
+        $query = $this->getPDO()->prepare("SELECT id FROM {$this->table} WHERE email = ?;");
+        $query->execute([$email]);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+
+        return $result[0]['id'];
+    }
+
+    public function getById(int $id)
+    {
+        $query = $this->getPDO()->prepare("SELECT * FROM {$this->table} WHERE id = ?;");
+        $query->execute([$id]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, self::class);
+
+        return $query->fetch() ?? false;
+    }
 }

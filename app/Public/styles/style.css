@@ -39,6 +39,16 @@ header #logo {
     font-style: italic;
 }
 
+.sub-header h2{
+    color: #FFD362;
+    text-align: center;
+    z-index: 2;
+    margin-top: -30vw;
+    font-size: 20vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .sub-header span{
     color: #FFD362;
 }

@@ -15,6 +15,7 @@ $router->register('GET', '/connection', ['Controllers\ConnectionController','ind
 $router->register('POST', '/connection', ['Controllers\ConnectionController','index']);
 $router->register('GET', '/registration', ['Controllers\RegistrationController','index']);
 $router->register('POST', '/registration', ['Controllers\RegistrationController','index']);
+$router->register('GET', '/account', ['Controllers\AccountController','index']);
 
 try
 {
