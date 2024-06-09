@@ -1,0 +1,28 @@
+#title-menu{
+    margin-left: -22vw;
+}
+.mid-page h4{
+    margin-left: 2vw;
+    font-size: 4vw;
+}
+
+.mid-page h4::after{
+    display: block;
+    content: "";
+    background-color: #FFD362;
+    width: 22vw;
+    height: 1.5vw;
+    border-radius: 2em;
+    margin-left: -3vw;
+}
+
+span{
+    font-weight: lighter;
+    font-size: 3.5vw;
+}
+
+.mid-page img{
+    width: 8vw;
+    float: right;
+    cursor: pointer;
+}
