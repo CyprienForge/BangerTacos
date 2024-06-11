@@ -1,6 +1,10 @@
 
 /* PARTIE Milieu de page */
 
+li{
+    list-style: none;
+}
+
 .mid-page{
     margin-top: 8vh;
 }

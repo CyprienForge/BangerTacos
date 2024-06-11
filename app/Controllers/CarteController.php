@@ -2,12 +2,17 @@
 
 namespace Controllers;
 
+use Models\Menu;
 use Renderer\Renderer;
 
 class CarteController implements IController
 {
     public function index() : Renderer
     {
-        return Renderer::make('carte', []);
+        $menu = new Menu();
+
+        $menus = $menu->getMenus();
+
+        return Renderer::make('carte', ['menus' => $menus]);
     }
 }

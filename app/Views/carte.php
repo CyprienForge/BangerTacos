@@ -19,11 +19,28 @@
 </section>
 
 <section class="mid-page">
-    <h4>P'tit creux : <span>Tacos S, Frites, Boisson ... 7€</span></h4>
-    <img src="http://127.0.0.1:8000/images/iconAddMenu.png" alt="Icon pour ajouter un menu">
-    <h4>Gourmand : <span>Tacos M, Frites, Boisson ... 8.5€</span></h4>
-    <h4>La Dalle : <span>Tacos L, Frites, Boisson ... 10€</span></h4>
-    <h4>Le Final : <span>Tacos Xl, Frites++, Boisson ... 12.5€</span></h4>
+
+    <?php
+        foreach ($menus as $menu)
+        {
+            $name = $menu->getName();
+            $description = $menu->getDescription();
+            $price = $menu->getPrice();
+            echo "<img id='icon-add' src='http://127.0.0.1:8000/images/iconAddMenu.png' alt='Icon pour ajouter un menu'>";
+            echo "<h4>$name : <span>$description ... {$price}€</span></h4>";
+        }
+    ?>
+
+    <h6>Les viandes aux choix : </h6>
+    <ul class="meat-choice">
+        <li>Kebab</li>
+        <li>Poulet</li>
+        <li>Steak haché</li>
+        <li>Tenders</li>
+        <li>Cordon bleu</li>
+        <li>Merguez</li>
+    </ul>
+
 </section>
 
 </body>
