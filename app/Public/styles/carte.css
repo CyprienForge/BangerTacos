@@ -48,3 +48,7 @@ h6{
     align-items: center;
     margin-left: auto;
 }
+
+li{
+    font-size: 3vw;
+}

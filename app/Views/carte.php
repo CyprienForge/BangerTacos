@@ -33,12 +33,12 @@
 
     <h6>Les viandes aux choix : </h6>
     <ul class="meat-choice">
-        <li>Kebab</li>
-        <li>Poulet</li>
-        <li>Steak haché</li>
-        <li>Tenders</li>
-        <li>Cordon bleu</li>
-        <li>Merguez</li>
+        <li>- Kebab</li>
+        <li>- Poulet</li>
+        <li>- Steak haché</li>
+        <li>- Tenders</li>
+        <li>- Cordon bleu</li>
+        <li>- Merguez</li>
     </ul>
 
 </section>

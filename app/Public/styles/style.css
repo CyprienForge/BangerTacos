@@ -55,6 +55,10 @@ header #logo {
 
 /* BURGER Menu */
 
+li{
+    list-style: none;
+}
+
 a{
     color: black;
     text-decoration: none;
@@ -168,6 +172,7 @@ footer #instagram-logo{
     float: left;
     width: 14vw;
     margin-top: 0.5vh;
+    cursor: pointer;
 }
 
 footer #facebook-logo{
@@ -175,4 +180,5 @@ footer #facebook-logo{
     width: 10vw;
     margin-top: -0.5vw;
     margin-right: 1vw;
+    cursor: pointer;
 }
