@@ -50,3 +50,41 @@ button:hover{
 footer{
     margin-top: 10vw;
 }
+
+.recap{
+    visibility: visible;
+}
+
+.infos-changer{
+    margin-top: 8vw;
+    display: none;
+}
+
+input{
+    display: block;
+    margin: auto;
+}
+
+#champ{
+    width: 60vw;
+    height: 7vw;
+}
+
+#submit{
+    margin-top: 4vw;
+    background-color: white;
+    width: 40vw;
+    height: 8vw;
+    font-weight: bold;
+    font-size: 4vw;
+    border-radius: 20px;
+    color: #FFD362;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+#submit:hover{
+    color: white;
+    background-color: #FFD362;
+    transform: scale(1.05);
+}

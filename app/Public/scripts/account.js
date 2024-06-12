@@ -1,31 +1,16 @@
-class User {
-    constructor(surName, firstName, email, phone)
-    {
-        this.surName = surName;
-        this.firstName = firstName;
-        this.email = email;
-        this.phone = phone;
-    }
-}
-
 var iconEdit = document.querySelector(".mid-page img")
+var recap = document.querySelector(".recap")
+var formModification = document.querySelector(".infos-changer")
 
 iconEdit.addEventListener("click", () => {
-    var surName = prompt("Nouveau nom : ")
-    while(surName.length < 2 || surName.length > 30)
+    if(recap.style.display === "none")
     {
-        alert("Nom non compris entre 2 et 30 caractères")
-        surName = prompt("Nouveau nom : ")
+        recap.style.display = "block";
+        formModification.style.display = "none";
     }
-    var firstName = prompt("Nouveau prénom :")
-    while(firstName.length < 2 || firstName.length > 30)
+    else
     {
-        alert("Prénom non compris entre 2 et 30 caractères")
-        firstName = prompt("Prénom nom : ")
+        recap.style.display = "none";
+        formModification.style.display = "block";
     }
-    var email = prompt("Nouveau email :")
-    var phone = prompt("Nouveau téléphone :")
-
-    const user = new User(surName, firstName, email, phone);
-    console.log(user.phone);
 })
