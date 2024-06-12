@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/carte.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
+    <script src="http://127.0.0.1:8000/scripts/carte.js" defer></script>
     <title>BangerTacos</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             $name = $menu->getName();
             $description = $menu->getDescription();
             $price = $menu->getPrice();
-            echo "<img id='icon-add' src='http://127.0.0.1:8000/images/iconAddMenu.png' alt='Icon pour ajouter un menu'>";
+            echo "<img class='icon-add' src='http://127.0.0.1:8000/images/iconAddMenu.png' alt='Icon pour ajouter un menu'>";
             echo "<h4>$name : <span>$description ... {$price}€</span></h4>";
         }
     ?>

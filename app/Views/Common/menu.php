@@ -39,8 +39,8 @@
             ?>
         </li>
         <li>
-            <a href="#"><img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact"></a>
-            <a href="#">Contact</a>
+            <a href="/contact"><img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact"></a>
+            <a href="/contact">Contact</a>
         </li>
         <li>
             <a href="#"><img id="illustration" src="http://127.0.0.1:8000/images/contactIcon.png" alt="Icon de contact"></a>

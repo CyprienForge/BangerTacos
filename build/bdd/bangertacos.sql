@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : db
--- Généré le : mar. 11 juin 2024 à 18:32
+-- Généré le : mer. 12 juin 2024 à 16:29
 -- Version du serveur : 8.0.37
 -- Version de PHP : 8.2.8
 
@@ -24,79 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Menus`
+-- Structure de la table `Baskets`
 --
 
-CREATE TABLE `Menus` (
-  `id` int NOT NULL,
-  `name` varchar(60) DEFAULT NULL,
-  `description` varchar(120) DEFAULT NULL,
-  `price` decimal(4,2) DEFAULT NULL
+CREATE TABLE `Baskets` (
+                           `idOwner` decimal(6,0) NOT NULL,
+                           `idProduct` decimal(6,0) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Déchargement des données de la table `Menus`
+-- Déchargement des données de la table `Baskets`
 --
 
-INSERT INTO `Menus` (`id`, `name`, `description`, `price`) VALUES
-(1, 'P\'tit creux', 'Tacos S, Frites, Boisson', 7.00),
-(2, 'Gourmand', 'Tacos M, Frites, Boisson', 8.50);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `Users`
---
-
-CREATE TABLE `Users` (
-  `id` int NOT NULL,
-  `firstName` varchar(50) DEFAULT NULL,
-  `surName` varchar(50) DEFAULT NULL,
-  `email` varchar(60) DEFAULT NULL,
-  `phone` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `password` varchar(200) DEFAULT NULL,
-  `loyaltyPoints` decimal(6,0) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `Users`
---
-
-INSERT INTO `Users` (`id`, `firstName`, `surName`, `email`, `phone`, `password`, `loyaltyPoints`) VALUES
-(9, 'Cyprien', 'Forge', 'cyprien.forge@gmail.com', '0766079834', '$2y$10$zmRtxMDnQ2zBSX6D7RPDf.9cDWvPuhTF6ORM/yrBgGIl89oBnJoFG', 0),
-(10, 'Clément', 'Villars', 'clement.villars@gmail.com', '0645213658', '$2y$10$bHpwxg1E5Jd/DuD7cy8zRuEj1fTpnPlgYNmdHKnbJ0iXARb9GwUhO', 0);
+INSERT INTO `Baskets` (`idOwner`, `idProduct`) VALUES
+    (1, 2);
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `Menus`
+-- Index pour la table `Baskets`
 --
-ALTER TABLE `Menus`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `Users`
---
-ALTER TABLE `Users`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `Menus`
---
-ALTER TABLE `Menus`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT pour la table `Users`
---
-ALTER TABLE `Users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+ALTER TABLE `Baskets`
+    ADD PRIMARY KEY (`idOwner`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

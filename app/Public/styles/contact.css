@@ -1,0 +1,42 @@
+.sub-header img{
+   height: 75vw;
+}
+
+.social-medias #instagram-logo{
+   width: 32vw;
+   height: 18vw;
+   cursor: pointer;
+}
+
+.social-medias #facebook-logo{
+   width: 22vw;
+   margin-top: -2.5vw;
+   cursor: pointer;
+}
+
+.social-medias{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.mid-page #call{
+   width: 13vw;
+}
+
+.mid-page h4{
+   font-size: 4vw;
+}
+
+.phone{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+iframe{
+   margin-top: 16vw;
+}
+
+h5{
+   font-size: 4vw;
+   text-align: center;
+}
