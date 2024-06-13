@@ -19,8 +19,8 @@
             }
             else
             {
-                echo "<a href='/panier?id=$id'><img id='illustration' src='http://127.0.0.1:8000/images/panierIcon.png' alt='Icon de caddie'></a>";
-                echo "<a href='/panier?id=$id'>Mon panier</a>";
+                echo "<a href='/basket?id=$id'><img id='illustration' src='http://127.0.0.1:8000/images/panierIcon.png' alt='Icon de caddie'></a>";
+                echo "<a href='/basket?id=$id'>Mon panier</a>";
             }
             ?>
         </li>

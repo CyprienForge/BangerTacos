@@ -16,7 +16,7 @@
 
 <section class="sub-header">
     <img src="http://127.0.0.1:8000/images/contactBackground.png" alt="A man who chat in his phone">
-    <h2>CONTACT</h2>
+    <h2 id="title-contact">CONTACT</h2>
 </section>
 
 <section class="mid-page">

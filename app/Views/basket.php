@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
-    <link rel="stylesheet" href="http://127.0.0.1:8000/styles/carte.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/styles/basket.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <script src="http://127.0.0.1:8000/scripts/carte.js" defer></script>
     <title>BangerTacos</title>
@@ -16,7 +16,19 @@
 
 <section class="sub-header">
     <img src="http://127.0.0.1:8000/images/basketBackground.png" alt="Background who represents a big tacos">
-    <h2>PANIER</h2>
+    <h2 id="title-basket">PANIER</h2>
+</section>
+
+<section class="mid-page">
+    <h1>Ma commande en cours</h1>
+    <?php
+        for($i = 0; $i < count($baskets); $i++)
+        {
+            ?>
+            <h4><?= $namesProduct[$i] ?></h4>
+    <?php
+        }
+    ?>
 </section>
 
 <footer>

@@ -12,16 +12,18 @@ class BasketController implements IController
     {
         return intval($_GET['id']);
     }
-
     public function index(): Renderer
     {
-
+        $namesProduct = [];
         $basket = new Basket();
 
         $baskets = $basket->getArticlesByOwnerId($this->getId());
 
-        if($baskets == null) throw new RouteNotFoundException();
+        for($i = 0; $i < count($baskets); $i++)
+        {
+            $namesProduct[$i] = (string)$baskets[$i]->getArticleNameById($baskets[$i]->getIdProduct());
+        }
 
-        return Renderer::make('basket', []);
+        return Renderer::make('basket', compact('baskets', 'namesProduct'));
     }
 }

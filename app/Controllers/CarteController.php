@@ -16,9 +16,10 @@ class CarteController implements IController
 
         return Renderer::make('carte', ['menus' => $menus]);
     }
-
     public function add()
     {
-        return Renderer::make('index', []);
+        $basket = new Basket();
+
+        $basket->addProduct($_SESSION['id'], 1);
     }
 }

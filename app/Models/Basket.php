@@ -8,6 +8,15 @@ class Basket extends Model
     private int $idOwner;
     private int $idProduct;
 
+    public function getIdOwner(): int
+    {
+        return $this->idOwner;
+    }
+
+    public function getIdProduct(): int
+    {
+        return $this->idProduct;
+    }
     public function addProduct(int $idOwner, int $idProduct)
     {
         $query = $this->getPDO()->prepare("
@@ -22,6 +31,24 @@ class Basket extends Model
             SELECT * FROM {$this->table}
             WHERE idOwner = ?
         ");
-        return $query->execute([$ownerId])->fetchAll();
+        $query->execute([$ownerId]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, self::class);
+
+        return $query->fetchAll();
+    }
+
+    public function getArticleNameById(int $idProduct) : string
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT m.name
+            FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
+            WHERE idProduct = ?
+        ");
+
+        $query->execute([$idProduct]);
+        $query->setFetchMode(\PDO::FETCH_ASSOC);
+        $result  = $query->fetchAll();
+
+        return $result[0]['name'];
     }
 }

@@ -2,6 +2,11 @@
    height: 75vw;
 }
 
+#title-contact{
+   font-size: 18vw;
+   margin-right: 4vw;
+}
+
 .social-medias #instagram-logo{
    width: 32vw;
    height: 18vw;
