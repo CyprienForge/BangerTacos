@@ -16,8 +16,10 @@ $router->register('POST', '/connection', ['Controllers\ConnectionController','in
 $router->register('GET', '/registration', ['Controllers\RegistrationController','index']);
 $router->register('POST', '/registration', ['Controllers\RegistrationController','index']);
 $router->register('GET', '/account', ['Controllers\AccountController','index']);
+$router->register('POST', '/account', ['Controllers\AccountController','index']);
 $router->register('GET', '/contact', ['Controllers\ContactController','index']);
 $router->register('GET', '/carteAdd', ['Controllers\CarteController','add']);
+$router->register('GET', '/basket', ['Controllers\BasketController','index']);
 
 try
 {

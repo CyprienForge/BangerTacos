@@ -92,4 +92,18 @@ class User extends Model
 
         return $query->fetch() ?? false;
     }
+
+    public function updateById(string $firstName, string $surName, string $email, string $phone, int $id)
+    {
+        $query = $this->getPDO()->prepare(
+            "UPDATE {$this->table}
+                   SET firstName = ? , 
+                       surName = ?,
+                       email = ? ,
+                       phone = ? 
+                   WHERE id = ?"
+        );
+        $query->execute([$firstName, $surName, $email, $phone, $id]);
+    }
+
 }

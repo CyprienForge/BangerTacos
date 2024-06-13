@@ -88,3 +88,7 @@ input{
     background-color: #FFD362;
     transform: scale(1.05);
 }
+
+#exit-modif{
+    display: none;
+}

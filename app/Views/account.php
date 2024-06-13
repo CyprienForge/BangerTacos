@@ -24,6 +24,7 @@
 
     <h1>Récap' de mes infos !</h1>
     <img src="http://127.0.0.1:8000/images/editer.png" alt="Icon of pen to edit a form">
+    <img id="exit-modif" src="http://127.0.0.1:8000/images/quitMenu.png" alt="Icon to exit this screen">
     <ul class="recap">
         <li>NOM : <?= $user->getSurName(); ?></li>
         <li>PRENOM : <?= $user->getFirstName(); ?> </li>
@@ -33,16 +34,35 @@
     </ul>
 
     <form method="POST" class="infos-changer">
-        <input id="champ" type="text" name="firstName" placeholder="Votre prénom" required>
+        <input id="champ" value=<?=$user->getSurName();?> type="text" name="surName" placeholder="Votre prénom" required>
         <br>
-        <input id="champ" type="text" name="surName" placeholder="Votre nom" required>
+        <input id="champ" value=<?=$user->getFirstName();?> type="text" name="firstName" placeholder="Votre nom" required>
         <br>
-        <input id="champ" type="email" name="email" placeholder="Votre email" required pattern="^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$">
+        <input id="champ" value=<?=$user->getEmail();?> type="email" name="email" placeholder="Votre email" required pattern="^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$">
         <br>
-        <input id="champ" type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)" required>
+        <input id="champ" value=<?=$user->getPhone();?> type="tel" name="phone" placeholder="Votre téléphone (07XXXXXXXX)" required>
         <br>
         <input id="submit" type="submit" value="VALIDER">
     </form>
+
+    <?php
+        use Classes\Changer;
+
+        if(!empty($_POST['surName'])){
+            $changer = new Changer($_SESSION['id'],
+                $_POST['surName'],
+                $_POST['firstName'],
+                $_POST['email'],
+                $_POST['phone']);
+
+            if(!$changer->isSameUser())
+            {
+                $changer->changeInfos();
+                header('Refresh: 0');
+            }
+        }
+
+    ?>
 
 </section>
 

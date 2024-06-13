@@ -15,4 +15,13 @@ class Basket extends Model
         ");
         $query->execute([$idOwner, $idProduct]);
     }
+
+    public function getArticlesByOwnerId(int $ownerId)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT * FROM {$this->table}
+            WHERE idOwner = ?
+        ");
+        return $query->execute([$ownerId])->fetchAll();
+    }
 }
