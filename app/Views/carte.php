@@ -1,3 +1,4 @@
+<?php session_start(); if(!empty($_SESSION['id'])) $id = $_SESSION['id']; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,16 +23,10 @@
 
 <section class="mid-page">
 
-    <?php
-        foreach ($menus as $menu)
-        {
-            $name = $menu->getName();
-            $description = $menu->getDescription();
-            $price = $menu->getPrice();
-            echo "<img class='icon-add' src='http://127.0.0.1:8000/images/iconAddMenu.png' alt='Icon pour ajouter un menu'>";
-            echo "<h4>$name : <span>$description ... {$price}€</span></h4>";
-        }
-    ?>
+    <?php foreach($menus as $menu) : ?>
+            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick="myFunction(<?=$_SESSION['id']?>, <?=$menu->getId()?>)" />
+            <h4><?= $menu->getName() ?> : <span><?= $menu->getDescription() ?> ... <?= $menu->getPrice() ?>€</span></h4>
+    <?php endforeach; ?>
 
     <h6>Les viandes aux choix : </h6>
     <ul class="meat-choice">

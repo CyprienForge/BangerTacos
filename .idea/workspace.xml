@@ -10,11 +10,11 @@
       <change beforePath="$PROJECT_DIR$/app/Controllers/CarteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CarteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/scripts/carte.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/carte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/Common/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Common/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/styles/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/styles/carte.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/carte.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/carte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/carte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/contact.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +164,8 @@
       <workItem from="1718216588039" duration="1600000" />
       <workItem from="1718260773036" duration="1916000" />
       <workItem from="1718281864002" duration="4646000" />
-      <workItem from="1718305759326" duration="5740000" />
+      <workItem from="1718305759326" duration="5845000" />
+      <workItem from="1718364872641" duration="7786000" />
     </task>
     <servers />
   </component>

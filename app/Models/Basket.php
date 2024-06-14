@@ -17,6 +17,11 @@ class Basket extends Model
     {
         return $this->idProduct;
     }
+
+    public function isAlreadyInBasket(int $idOwner, int $idProduct): bool
+    {
+        // TO IMPLEMENT
+    }
     public function addProduct(int $idOwner, int $idProduct)
     {
         $query = $this->getPDO()->prepare("
@@ -50,5 +55,20 @@ class Basket extends Model
         $result  = $query->fetchAll();
 
         return $result[0]['name'];
+    }
+
+    public function getArticlePriceById(int $idProduct) : string
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT m.price
+            FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
+            WHERE idProduct = ?
+        ");
+
+        $query->execute([$idProduct]);
+        $query->setFetchMode(\PDO::FETCH_ASSOC);
+        $result  = $query->fetchAll();
+
+        return $result[0]['price'];
     }
 }

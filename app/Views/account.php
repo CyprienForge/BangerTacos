@@ -66,7 +66,7 @@
 
 </section>
 
-<button>MON PANIER</button>
+<a href='/basket?id=<?=$id?>'><button>MON PANIER</button></a>
 
 <footer>
     <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">

@@ -21,14 +21,21 @@
 
 <section class="mid-page">
     <h1>Ma commande en cours</h1>
-    <?php
-        for($i = 0; $i < count($baskets); $i++)
-        {
-            ?>
-            <h4><?= $namesProduct[$i] ?></h4>
-    <?php
-        }
-    ?>
+    <?php for($i = 0; $i < count($baskets); $i++) : ?>
+        <h4><?= $namesProduct[$i] ?> : <span id="count">xX</span> / <span id="price"><?=$pricesProduct[$i]?>€</span></h4>
+    <?php endfor; ?>
+
+    <hr>
+    <br>
+    <h4 id="total"><span id="count">TOTAL</span> / <span id="price"><?=$priceTotal?>€</h4>
+    <h4 id="total"><span id="count">TOTAL</span> / <span id="price"><?=$reduction?>PTS</h4>
+
+</section>
+
+<section class="end-page">
+    <input id="champ" type="time" name="time">
+    <label for="time">Heure voulue : </label>
+    <input id="submit" type="submit" value="PAYER">
 </section>
 
 <footer>

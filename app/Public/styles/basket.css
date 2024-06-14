@@ -1,3 +1,70 @@
 #title-basket{
     margin-right: 20vw;
 }
+
+h4{
+    font-size: 4vw;
+    text-align: center;
+    font-style: italic;
+}
+
+#count{
+    padding-right: 10vw;
+    padding-left: 5vw;
+}
+
+#price{
+    padding-left: 6vw;
+}
+
+hr{
+    float: left;
+    width: 50%;
+    height: 2vw;
+    background-color: #FFD362;
+    border: 0.1px;
+    border-radius: 2em;
+}
+
+#total{
+    margin-left: 15vw;
+}
+
+.end-page{
+    margin-top: 10vw;
+}
+
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+label{
+    margin-left: 7vw;
+}
+
+#champ{
+    float: right;
+    margin-right: 10vw;
+}
+
+#submit{
+    margin-top: 10vw;
+    background-color: white;
+    width: 40vw;
+    height: 8vw;
+    font-weight: bold;
+    font-size: 4vw;
+    border-radius: 20px;
+    color: #FFD362;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+#submit:hover{
+    color: white;
+    background-color: #FFD362;
+    transform: scale(1.05);
+}

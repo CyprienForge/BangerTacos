@@ -18,8 +18,12 @@ class CarteController implements IController
     }
     public function add()
     {
+        $idOwner = $_GET['idOwner'];
+        $idProduct = $_GET['idProduct'];
+
         $basket = new Basket();
 
-        $basket->addProduct($_SESSION['id'], 1);
+        $basket->isAlreadyInBasket($idOwner, $idProduct);
+        $basket->addProduct($idOwner, $idProduct);
     }
 }
