@@ -16,14 +16,20 @@ class CarteController implements IController
 
         return Renderer::make('carte', ['menus' => $menus]);
     }
-    public function add()
+    public function add() : void
     {
         $idOwner = $_GET['idOwner'];
         $idProduct = $_GET['idProduct'];
 
         $basket = new Basket();
 
-        $basket->isAlreadyInBasket($idOwner, $idProduct);
-        $basket->addProduct($idOwner, $idProduct);
+        if($basket->isAlreadyInBasket($idOwner, $idProduct))
+        {
+            $basket->addOneUnit($idOwner, $idProduct);
+        }
+        else
+        {
+            $basket->addProduct($idOwner, $idProduct);
+        }
     }
 }

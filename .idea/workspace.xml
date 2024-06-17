@@ -9,10 +9,9 @@
       <change beforePath="$PROJECT_DIR$/app/Controllers/BasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/BasketController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/CarteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CarteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/scripts/carte.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/carte.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/styles/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/basket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/carte.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/carte.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/carte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/carte.php" afterDir="false" />
     </list>
@@ -80,26 +79,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;PHPUnit.RegisterTest.test_isFirstNameValid.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos/build/bdd&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "PHPUnit.RegisterTest.test_isFirstNameValid.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/cypri/OneDrive/Bureau/BangerTacos/app/Public/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\build\bdd" />
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
+      <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\build\bdd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cypri\OneDrive\Bureau\BangerTacos\app\Public\images" />
@@ -166,6 +165,7 @@
       <workItem from="1718281864002" duration="4646000" />
       <workItem from="1718305759326" duration="5845000" />
       <workItem from="1718364872641" duration="7786000" />
+      <workItem from="1718611421630" duration="6228000" />
     </task>
     <servers />
   </component>

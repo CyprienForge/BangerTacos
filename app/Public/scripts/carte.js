@@ -1,4 +1,4 @@
-function myFunction(idOwner, idProduct)
+function addIntoBasket(idOwner, idProduct)
 {
     $.ajax({
         type: 'GET',

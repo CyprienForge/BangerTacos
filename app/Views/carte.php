@@ -22,9 +22,8 @@
 </section>
 
 <section class="mid-page">
-
     <?php foreach($menus as $menu) : ?>
-            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick="myFunction(<?=$_SESSION['id']?>, <?=$menu->getId()?>)" />
+            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick="addIntoBasket(<?=$_SESSION['id']?>, <?=$menu->getId()?>)" />
             <h4><?= $menu->getName() ?> : <span><?= $menu->getDescription() ?> ... <?= $menu->getPrice() ?>€</span></h4>
     <?php endforeach; ?>
 

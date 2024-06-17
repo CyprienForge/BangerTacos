@@ -68,3 +68,10 @@ label{
     background-color: #FFD362;
     transform: scale(1.05);
 }
+
+.delete-icon{
+    margin-top: -1.2vw;
+    margin-right: 5vw;
+    width: 7vw;
+    float: right;
+}
