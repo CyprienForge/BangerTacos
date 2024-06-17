@@ -55,7 +55,7 @@
                 $_POST['email'],
                 $_POST['phone']);
 
-            if(!$changer->isSameUser())
+            if(!$changer->isSameUser() && $changer->isChangeValid())
             {
                 $changer->changeInfos();
                 header('Refresh: 0');

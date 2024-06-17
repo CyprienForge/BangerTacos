@@ -44,7 +44,7 @@ class Register
 
     public function isEmailValid(): bool
     {
-        return preg_match('/^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]+$/', $this->email)
+        return preg_match('/^[a-zA-Z0-9._]+@[a-z]{2,}\.[a-zA-Z.]{2,}$/', $this->email)
             && strlen($this->email) > 12
             && strlen($this->email) < 50;
     }
