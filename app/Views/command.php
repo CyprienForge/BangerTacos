@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/command.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
+    <script src="http://127.0.0.1:8000/scripts/jquery-3.7.1.js"></script>
+    <script src="http://127.0.0.1:8000/scripts/command.js" defer></script>
     <title>BangerTacos</title>
 </head>
 <body>
@@ -20,7 +22,20 @@
 
 <section class="mid-page">
     <h1>Récap' de ma commande</h1>
-        <h4><?=$commands['price']?></h4>
+        <h4><?=$commands['date']?> | <?=$commands['hour']?> : Commande N°<?=$commands['id']?> ----- <?=$commands['price']?>€</h4>
+        <?php for($i = 0 ; $i < count($articles) ; $i++): ?>
+        <h5> x<?=$quantities[$i]?> <?=$articles[$i]->getName()?> | <?=$articles[$i]->getDescription()?></h5>
+        <?php endfor; ?>
+
+    <hr>
+    <br>
+
+    <h6>Assurez-vous que l'ensemble des données présentes au-dessus sont valides <span>avant de procéder au paiement</span></h6>
+
+    <a href="/"><button onclick="dropBasket(<?=$_GET['id']?>)" id="submit">PAYER MA COMMANDE</button></a>
+
+    <p>BangerTacos décline toute responsabilité en cas de paiement avec une carte volée</p>
+
 </section>
 
 <footer>

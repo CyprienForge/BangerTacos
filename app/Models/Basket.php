@@ -129,4 +129,31 @@ class Basket extends Model
 
         return $result[0]['price'];
     }
+    public function getCurrentBasket(int $idOwner)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT m.id, m.name, m.description, m.price FROM {$this->table} b 
+            JOIN Menus m ON b.idProduct = m.id
+            WHERE idOwner = ?
+        ");
+        $query->execute([$idOwner]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, Menu::class);
+
+        return $query->fetchAll();
+    }
+
+    public function getQuantityArticle(int $idOwner, int $idProduct)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT units as quantity
+            FROM {$this->table}
+            WHERE idOwner = ? AND idProduct = ?
+        ");
+        $query->execute([$idOwner, $idProduct]);
+        $query->setFetchMode(\PDO::FETCH_ASSOC);
+
+        $result = $query->fetchAll();
+
+        return $result[0]['quantity'];
+    }
 }

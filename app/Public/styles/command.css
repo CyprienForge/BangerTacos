@@ -1,3 +1,62 @@
 #title-command{
     margin-right: 20vw;
 }
+
+.mid-page h4{
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+h5{
+    font-size: 3vw;
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+    font-size: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+span{
+    color: #FFD362;
+}
+hr{
+    float: left;
+    width: 50%;
+    height: 2vw;
+    background-color: #FFD362;
+    border: 0.1px;
+    border-radius: 2em;
+}
+#submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    background-color: white;
+    width: 60vw;
+    height: 8vw;
+    font-weight: bold;
+    font-size: 4vw;
+    border-radius: 20px;
+    color: #FFD362;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+#submit:hover{
+    color: white;
+    background-color: #FFD362;
+    transform: scale(1.05);
+}
+
+p{
+    font-size: 3vw;
+    text-align: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+

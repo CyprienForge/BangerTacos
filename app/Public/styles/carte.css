@@ -32,6 +32,11 @@ span{
     padding: -4vw;
     margin-bottom: -6vw;
     margin-left: 2vw;
+    transition: 1s all ease;
+}
+
+.add-icon:active{
+    transform: scale(1.2);
 }
 
 h6{

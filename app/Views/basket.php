@@ -24,7 +24,7 @@
     <?php if(!empty($baskets)) :?>
         <h1>Ma commande en cours</h1>
         <?php for($i = 0; $i < count($baskets); $i++) : ?>
-            <input class="delete-icon" type="image" src="http://127.0.0.1:8000/images/iconDelete.png" onclick="deleteIntoBasket(<?=$_GET['id']?>, <?=$baskets[$i]->getIdProduct()?>)" />
+            <a href="/basket?id=<?=$_GET['id']?>"><input class="delete-icon" type="image" src="http://127.0.0.1:8000/images/iconDelete.png" onclick="deleteIntoBasket(<?=$_GET['id']?>, <?=$baskets[$i]->getIdProduct()?>)" /></a>
             <h4><?= $namesProduct[$i] ?> : <span id="count">x<?=$baskets[$i]->getUnits()?></span> / <span id="price"><?=$pricesProduct[$i]*$baskets[$i]->getUnits()?>€</span></h4>
         <?php endfor; ?>
 

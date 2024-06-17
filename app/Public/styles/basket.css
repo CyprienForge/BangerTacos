@@ -74,4 +74,9 @@ label{
     margin-right: 5vw;
     width: 7vw;
     float: right;
+    transition: 0.5s all ease;
+}
+
+.delete-icon:active{
+    transform: scale(1.2);
 }

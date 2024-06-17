@@ -9,6 +9,7 @@ class Command extends Model
     private int $idOwner;
     private string $hour;
     private float $price;
+    private string $date;
 
     public function getIdCommand(): int
     {
@@ -27,13 +28,18 @@ class Command extends Model
         return $this->price;
     }
 
-    public function createCommand(int $idOwner, string $hour, float $price)
+    public function getDate(): string
+    {
+        return $this->date;
+    }
+
+    public function createCommand(int $idOwner, string $hour, float $price, string $date)
     {
         $query = $this->getPDO()->prepare("
             INSERT INTO {$this->table}
-            (idOwner, hour, price) 
-            VALUES(?, ?, ?)
+            (idOwner, hour, price, date) 
+            VALUES(?, ?, ?, ?)
         ");
-        $query->execute([$idOwner, $hour, $price]);
+        $query->execute([$idOwner, $hour, $price, $date]);
     }
 }
