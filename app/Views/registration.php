@@ -35,7 +35,7 @@
         <br>
         <input id="submit" type="submit" value="Créer le compte">
     </form>
-    <a href="/inscription"><p>Vous possédez déjà un compte ? Connectez-vous !</p></a>
+    <a href="/connection"><p>Vous possédez déjà un compte ? Connectez-vous !</p></a>
 </section>
 
 <?php

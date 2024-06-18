@@ -24,3 +24,14 @@ exit.addEventListener("click", () => {
     iconEdit.style.display = "block";
     exit.style.display = "none";
 })
+
+r = 0
+function disconnection()
+{
+    $.ajax({
+        type: 'GET',
+        url: '/disconnection'
+    }).then(response => r);
+    console.log(r)
+    location.reload();
+}

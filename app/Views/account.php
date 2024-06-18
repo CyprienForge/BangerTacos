@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/account.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
+    <script src="http://127.0.0.1:8000/scripts/jquery-3.7.1.js"></script>
     <script src="http://127.0.0.1:8000/scripts/account.js" defer></script>
     <title>BangerTacos</title>
 </head>
@@ -23,7 +24,8 @@
     <h3>Bonjour <span><?= $user->getFirstName(); ?> !</span></h3>
 
     <h1>Récap' de mes infos !</h1>
-    <img src="http://127.0.0.1:8000/images/editer.png" alt="Icon of pen to edit a form">
+    <img id="icon-edit" src="http://127.0.0.1:8000/images/editer.png" alt="Icon of pen to edit a form">
+    <input id="icon-disconnection" type="image" src="http://127.0.0.1:8000/images/iconDisconnection.png" onclick="disconnection()"/>
     <img id="exit-modif" src="http://127.0.0.1:8000/images/quitMenu.png" alt="Icon to exit this screen">
     <ul class="recap">
         <li>NOM : <?= $user->getSurName(); ?></li>

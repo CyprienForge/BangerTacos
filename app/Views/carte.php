@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/carte.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <script src="http://127.0.0.1:8000/scripts/jquery-3.7.1.js"></script>
     <script src="http://127.0.0.1:8000/scripts/carte.js" defer></script>
@@ -23,7 +24,11 @@
 
 <section class="mid-page">
     <?php foreach($menus as $menu) : ?>
-            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick='addIntoBasket(<?=$_SESSION['id']?>, <?=$menu->getId()?>)' />
+            <?php if(!empty($_SESSION['id'])) : ?>
+                <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick='addIntoBasket(<?=$_SESSION['id']?>, <?=$menu->getId()?>)' />
+                <?php else : ?>
+                <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick='userDontConnect()' />
+        <?php endif ?>
             <h4><?= $menu->getName() ?> : <span><?= $menu->getDescription() ?> ... <?= $menu->getPrice() ?>€</span></h4>
     <?php endforeach; ?>
 

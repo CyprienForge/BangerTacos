@@ -16,11 +16,27 @@ li{
     padding-top: 1vw;
 }
 
-.mid-page img{
+#icon-edit{
     cursor: pointer;
     margin-right: 3vw;
     margin-top: -4vw;
     float: right;
+    width: 6vw;
+}
+
+#exit-modif{
+    cursor: pointer;
+    margin-right: 3vw;
+    margin-top: -4vw;
+    float: right;
+    width: 6vw;
+}
+
+#icon-disconnection{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: -4vw;
+    float: left;
     width: 6vw;
 }
 

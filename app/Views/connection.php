@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/connection.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <title>BangerTacos</title>
 </head>
@@ -40,7 +41,7 @@
             echo '<p>Connexion échouée !</p>';
             exit(1);
         }
-        echo "<p>Conexion réussie ! Sous le mail suivant : " . $_SESSION['email'] . "</p>";
+        echo "<script>connectionSuccess()</script>";
     }
 ?>
 

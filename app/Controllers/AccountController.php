@@ -22,4 +22,10 @@ class AccountController implements IController
 
         return Renderer::make('account', ['user' => $user]);
     }
+
+    public function disconnection() : void
+    {
+        session_start();
+        session_destroy();
+    }
 }

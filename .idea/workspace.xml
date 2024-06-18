@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Public/images/iconDisconnection.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classes/Changer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Changer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classes/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/carte.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/carte.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/scripts/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/scripts/carte.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/carte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/styles/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/styles/connection.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/connection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/carte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/carte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/registration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +172,7 @@
       <workItem from="1718611421630" duration="6363000" />
       <workItem from="1718624555986" duration="4271000" />
       <workItem from="1718641783631" duration="1239000" />
+      <workItem from="1718698689111" duration="4215000" />
     </task>
     <servers />
   </component>

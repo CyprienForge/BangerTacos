@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/basket.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <script src="http://127.0.0.1:8000/scripts/jquery-3.7.1.js"></script>
     <script src="http://127.0.0.1:8000/scripts/basket.js" defer></script>
