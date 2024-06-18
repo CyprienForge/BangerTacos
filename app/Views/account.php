@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/account.css">
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="http://127.0.0.1:8000/scripts/jquery-3.7.1.js"></script>
     <script src="http://127.0.0.1:8000/scripts/account.js" defer></script>
     <title>BangerTacos</title>
@@ -69,6 +70,13 @@
 </section>
 
 <a href='/basket?id=<?=$id?>'><button>MON PANIER</button></a>
+<button id="visualize-historic">HISTORIQUE</button>
+
+<div class="historic">
+    <?php foreach($commands as $command) : ?>
+        <p><?=$command->getDate()?> | <?=$command->getHour()?> : Commande N°<?=$command->getIdCommand()?> ----- <?=$command->getPrice()?>€</p>
+    <?php endforeach; ?>
+</div>
 
 <footer>
     <img id="instagram-logo" src="http://127.0.0.1:8000/images/instagramIcon.png" alt="Logo d'Instagram">

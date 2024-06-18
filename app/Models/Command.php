@@ -42,4 +42,17 @@ class Command extends Model
         ");
         $query->execute([$idOwner, $hour, $price, $date]);
     }
+
+    public function getCommandsByOwnerId(int $id)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT * 
+            FROM {$this->table}
+            WHERE idOwner = ?
+        ");
+        $query->execute([$id]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, self::class);
+
+        return $query->fetchAll();
+    }
 }

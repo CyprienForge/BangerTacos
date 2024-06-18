@@ -19,6 +19,7 @@ $router->register('GET', '/account', ['Controllers\AccountController','index']);
 $router->register('POST', '/account', ['Controllers\AccountController','index']);
 $router->register('GET', '/contact', ['Controllers\ContactController','index']);
 $router->register('GET', '/carteAdd', ['Controllers\CarteController','add']);
+$router->register('GET', '/carteAddExtra', ['Controllers\CarteController','addExtra']);
 $router->register('GET', '/basket', ['Controllers\BasketController','index']);
 $router->register('POST', '/basket', ['Controllers\BasketController','index']);
 $router->register('GET', '/basketDelete', ['Controllers\BasketController','delete']);

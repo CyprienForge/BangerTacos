@@ -41,7 +41,20 @@
             echo '<p>Connexion échouée !</p>';
             exit(1);
         }
-        echo "<script>connectionSuccess()</script>";
+
+        echo
+        "<script>swal({
+            title: 'Connecté !',
+            text: 'Bienvenue à toi', 
+            icon: 'success',
+            button: {
+                text: 'Merci',
+                className: 'buttonRedirect',
+            }
+            }).then(function(){
+               window.location = '/'; 
+            });
+        </script>";
     }
 ?>
 

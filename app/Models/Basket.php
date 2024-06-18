@@ -71,26 +71,48 @@ class Basket extends Model
 
     public function getArticleNameById(int $idProduct) : string
     {
-        $query = $this->getPDO()->prepare("
-            SELECT m.name
-            FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
-            WHERE idProduct = ?
-        ");
+        if($idProduct < 999)
+        {
+            $query = $this->getPDO()->prepare("
+                SELECT m.name
+                FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
+                LEFT JOIN Extras e ON e.id = b.idProduct
+                WHERE idProduct = ?
+            ");
+        }
+        else{
+            $query = $this->getPDO()->prepare("
+                SELECT e.name
+                FROM {$this->table} b JOIN Extras e ON b.idProduct = e.id  
+                WHERE idProduct = ?
+            ");
+        }
 
         $query->execute([$idProduct]);
         $query->setFetchMode(\PDO::FETCH_ASSOC);
         $result  = $query->fetchAll();
 
-        return $result[0]['name'];
+        return $result[0]['name'] ?? false;
     }
 
     public function getArticlePriceById(int $idProduct) : string
     {
-        $query = $this->getPDO()->prepare("
-            SELECT m.price
-            FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
-            WHERE idProduct = ?
-        ");
+        if($idProduct < 999)
+        {
+            $query = $this->getPDO()->prepare("
+                SELECT m.price
+                FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id  
+                LEFT JOIN Extras e ON e.id = b.idProduct
+                WHERE idProduct = ?
+            ");
+        }
+        else{
+            $query = $this->getPDO()->prepare("
+                SELECT e.price
+                FROM {$this->table} b JOIN Extras e ON b.idProduct = e.id  
+                WHERE idProduct = ?
+            ");
+        }
 
         $query->execute([$idProduct]);
         $query->setFetchMode(\PDO::FETCH_ASSOC);
@@ -116,19 +138,39 @@ class Basket extends Model
         $query->execute([$idOwner]);
     }
 
-    public function getPriceCurrentBasket(int $idOwner)
+    public function getPriceCurrentBasket(int $idOwner) : float
+    {
+        return $this->getPriceExtras($idOwner) + $this->getPriceMenus($idOwner);
+    }
+
+    public function getPriceExtras(int $idOwner) : float
     {
         $query = $this->getPDO()->prepare("
-            SELECT sum(m.price*b.units) as price
-            FROM {$this->table} b JOIN Menus m ON b.idProduct = m.id
-            WHERE  b.idOwner = ?
+            SELECT e.price 
+            FROM {$this->table} b JOIN Extras e ON e.id = b.idProduct
+            WHERE b.idOwner = ?
         ");
         $query->execute([$idOwner]);
         $query->setFetchMode(\PDO::FETCH_ASSOC);
         $result = $query->fetchAll();
 
-        return $result[0]['price'];
+        return $result[0]['price'] ?? false;
     }
+
+    private function getPriceMenus(int $idOwner)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT m.price 
+            FROM {$this->table} b JOIN Menus m ON m.id = b.idProduct
+            WHERE b.idOwner = ?
+        ");
+        $query->execute([$idOwner]);
+        $query->setFetchMode(\PDO::FETCH_ASSOC);
+        $result = $query->fetchAll();
+
+        return $result[0]['price'] ?? false;
+    }
+
     public function getCurrentBasket(int $idOwner)
     {
         $query = $this->getPDO()->prepare("
@@ -156,4 +198,5 @@ class Basket extends Model
 
         return $result[0]['quantity'];
     }
+
 }

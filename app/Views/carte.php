@@ -42,6 +42,33 @@
         <li>- Merguez</li>
     </ul>
 
+    <div class="sub-header">
+        <img src="http://127.0.0.1:8000/images/extrasIcon.png" alt="Image for background who represents a icecream">
+        <h2 id="title-menu">EXTRAS</h2>
+    </div>
+
+    <?php foreach($extras as $extra) : ?>
+        <?php if(!empty($_SESSION['id'])) : ?>
+            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick='addExtraIntoBasket(<?=$_SESSION['id']?>, <?=$extra->getId()?>)' />
+        <?php else : ?>
+            <input class="add-icon" type="image" src="http://127.0.0.1:8000/images/iconAddMenu.png" onclick='userDontConnect()' />
+        <?php endif ?>
+        <h4><?= $extra->getName() ?> : <span>..... <?= $extra->getPrice() ?>€</span></h4>
+    <?php endforeach; ?>
+
+    <h6>Les parfums aux choix : </h6>
+    <ul class="cream-choice">
+        <li>- Fraise</li>
+        <li>- Vanille</li>
+        <li>- Framboise</li>
+        <li>- Citron</li>
+        <li>- Café</li>
+        <li>- Chocolat</li>
+        <li>- Rhum raisin</li>
+    </ul>
+
+    <h3>Écoutez votre ventre !</h3>
+
 </section>
 
 <footer>

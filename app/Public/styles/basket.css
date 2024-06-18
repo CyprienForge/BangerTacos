@@ -80,3 +80,23 @@ label{
 .delete-icon:active{
     transform: scale(1.2);
 }
+
+button{
+    margin: 15vw auto 20vw auto;
+    font-size: 3.5vw;
+    display: block;
+    background-color: white;
+    font-weight: bold;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    color: #FFD362;
+    border-radius: 20px;
+    height: 10vw;
+    width: 50vw;
+}
+
+button:hover{
+    color: white;
+    background-color: #FFD362;
+    transform: scale(1.05);
+}

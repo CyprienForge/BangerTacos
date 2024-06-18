@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Exceptions\RouteNotFoundException;
+use Models\Command;
 use Models\User;
 use Renderer\Renderer;
 
@@ -20,7 +21,10 @@ class AccountController implements IController
 
         if($user == null) throw new RouteNotFoundException();
 
-        return Renderer::make('account', ['user' => $user]);
+        $command = new Command();
+        $commands = $command->getCommandsByOwnerId($user->getId());
+
+        return Renderer::make('account', compact('user', 'commands'));
     }
 
     public function disconnection() : void

@@ -2,6 +2,18 @@ var iconEdit = document.querySelector(".mid-page img")
 var recap = document.querySelector(".recap")
 var formModification = document.querySelector(".infos-changer")
 var exit = document.querySelector("#exit-modif")
+var visualizeHistoric = document.querySelector("#visualize-historic")
+var historic = document.querySelector(".historic")
+
+visualizeHistoric.addEventListener("click", () => {
+    if(historic.style.display === "none")
+    {
+        historic.style.display = "block";
+    }
+    else{
+        historic.style.display = "none";
+    }
+})
 
 iconEdit.addEventListener("click", () => {
     if(recap.style.display === "none")
@@ -28,10 +40,19 @@ exit.addEventListener("click", () => {
 r = 0
 function disconnection()
 {
-    $.ajax({
-        type: 'GET',
-        url: '/disconnection'
-    }).then(response => r);
-    console.log(r)
-    location.reload();
+    swal({
+        title: 'Déconnexion',
+        text: 'Es-tu sûr de vouloir te déconnecter ?',
+        icon: 'warning',
+        buttons: ["Non", "Oui"],
+    }).then((result) => {
+        if(result === true)
+        {
+            $.ajax({
+                type: 'GET',
+                url: '/disconnection'
+            });
+            window.location = '/';
+        }
+    })
 }

@@ -106,4 +106,17 @@ class User extends Model
         $query->execute([$firstName, $surName, $email, $phone, $id]);
     }
 
+    public function getUserByEmail(string $email)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT *
+            FROM {$this->table}
+            WHERE email = ?
+        ");
+        $query->execute([$email]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, self::class);
+
+        return $query->fetch();
+    }
+
 }

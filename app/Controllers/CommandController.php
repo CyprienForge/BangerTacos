@@ -30,6 +30,9 @@ class CommandController implements IController
 
         $articles = $basket->getCurrentBasket($id);
 
+        var_dump($articles);
+        exit(1);
+
         for($i = 0; $i < count($articles); $i++)
         {
             $quantities[$i] = (string)$basket->getQuantityArticle($id, $articles[$i]->getId());

@@ -13,6 +13,21 @@ function addIntoBasket(idOwner, idProduct)
     });
 }
 
+function addExtraIntoBasket(idOwner, idProduct)
+{
+    $.ajax({
+        type: 'GET',
+        url: '/carteAddExtra?idOwner='+ idOwner + "&idProduct=" + idProduct
+    });
+
+    swal({
+        title: "Et hop !",
+        text: "Votre article a bien été ajouté au panier",
+        icon: "success",
+        button: "Parfait !",
+    });
+}
+
 function userDontConnect()
 {
     swal({

@@ -25,7 +25,7 @@
     <?php if(!empty($baskets)) :?>
         <h1>Ma commande en cours</h1>
         <?php for($i = 0; $i < count($baskets); $i++) : ?>
-            <a href="/basket?id=<?=$_GET['id']?>"><input class="delete-icon" type="image" src="http://127.0.0.1:8000/images/iconDelete.png" onclick="deleteIntoBasket(<?=$_GET['id']?>, <?=$baskets[$i]->getIdProduct()?>)" /></a>
+            <input class="delete-icon" type="image" src="http://127.0.0.1:8000/images/iconDelete.png" onclick="deleteIntoBasket(<?=$_GET['id']?>, <?=$baskets[$i]->getIdProduct()?>)"/>
             <h4><?= $namesProduct[$i] ?> : <span id="count">x<?=$baskets[$i]->getUnits()?></span> / <span id="price"><?=$pricesProduct[$i]*$baskets[$i]->getUnits()?>€</span></h4>
         <?php endfor; ?>
 
@@ -43,6 +43,9 @@
                 <input id="submit" type="submit" value="PAYER">
             </form>
         </section>
+    <?php else : ?>
+        <h1>Un petite faim ?</h1>
+        <a href='/carte'><button>CONSULTER LA CARTE</button></a>
     <?php endif; ?>
 
 <footer>
