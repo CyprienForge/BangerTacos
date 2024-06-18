@@ -129,7 +129,7 @@ class Basket extends Model
         $query->execute([$idOwner, $idProduct]);
     }
 
-    public function dropBasket(int $idOwner)
+    public function dropBasket(int $idOwner) : void
     {
         $query = $this->getPDO()->prepare("
             DELETE FROM {$this->table}
@@ -146,7 +146,7 @@ class Basket extends Model
     public function getPriceExtras(int $idOwner) : float
     {
         $query = $this->getPDO()->prepare("
-            SELECT e.price 
+            SELECT sum(e.price) as price
             FROM {$this->table} b JOIN Extras e ON e.id = b.idProduct
             WHERE b.idOwner = ?
         ");
@@ -160,7 +160,7 @@ class Basket extends Model
     private function getPriceMenus(int $idOwner)
     {
         $query = $this->getPDO()->prepare("
-            SELECT m.price 
+            SELECT sum(m.price) as price
             FROM {$this->table} b JOIN Menus m ON m.id = b.idProduct
             WHERE b.idOwner = ?
         ");
@@ -171,7 +171,7 @@ class Basket extends Model
         return $result[0]['price'] ?? false;
     }
 
-    public function getCurrentBasket(int $idOwner)
+    public function getCurrentBasketMenus(int $idOwner)
     {
         $query = $this->getPDO()->prepare("
             SELECT m.id, m.name, m.description, m.price FROM {$this->table} b 
@@ -180,6 +180,20 @@ class Basket extends Model
         ");
         $query->execute([$idOwner]);
         $query->setFetchMode(\PDO::FETCH_CLASS, Menu::class);
+
+        return $query->fetchAll();
+    }
+
+    public function getCurrentBasketExtras(int $idOwner)
+    {
+        $query = $this->getPDO()->prepare("
+            SELECT e.id, e.name, e.price 
+            FROM {$this->table} b 
+            JOIN Extras e ON b.idProduct = e.id
+            WHERE idOwner = ?
+        ");
+        $query->execute([$idOwner]);
+        $query->setFetchMode(\PDO::FETCH_CLASS, Extra::class);
 
         return $query->fetchAll();
     }

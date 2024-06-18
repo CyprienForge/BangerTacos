@@ -10,35 +10,30 @@ class CommandController implements IController
 {
     public function index() : Renderer
     {
-        $id = $_GET['id'];
-        $command = new Command();
+        $idOwner = $_GET['id'];
         $basket = new Basket();
         $date = date('Y-m-d');
         $quantities = [];
 
-        $price = $basket->getPriceCurrentBasket($id);
-        // $basket->dropBasket($id);
-
-        $command->createCommand($id, $_POST['time'], $price, $date);
+        $price = $basket->getPriceCurrentBasket($idOwner);
 
         $commands = [
-            "id" => $id,
             "hour" => $_POST['time'],
             "price" => $price,
             "date" => $date,
         ];
 
-        $articles = $basket->getCurrentBasket($id);
+        $menus = $basket->getCurrentBasketMenus($idOwner);
+        $extras = $basket->getCurrentBasketExtras($idOwner);
 
-        var_dump($articles);
-        exit(1);
+        $articles = array_merge($menus, $extras);
 
         for($i = 0; $i < count($articles); $i++)
         {
-            $quantities[$i] = (string)$basket->getQuantityArticle($id, $articles[$i]->getId());
+            $quantities[$i] = (string)$basket->getQuantityArticle($idOwner, $articles[$i]->getId());
         }
 
-        return Renderer::make('command', compact('commands', 'articles', 'quantities'));
+        return Renderer::make('command', compact('commands', 'articles' ,'quantities'));
     }
 
     public function dropBasket() : void
@@ -47,5 +42,17 @@ class CommandController implements IController
         $basket = new Basket();
 
         $basket->dropBasket($idOwner);
+    }
+
+    public function createCommand() : void
+    {
+        $idOwner = $_GET['idOwner'];
+        $basket = new Basket();
+        $command = new Command();
+
+        $date = date('Y-m-d');
+        $price = $basket->getPriceCurrentBasket($idOwner);
+
+        $command->createCommand($idOwner, $_POST['time'], $price, $date);
     }
 }

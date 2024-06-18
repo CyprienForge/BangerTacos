@@ -1,8 +1,15 @@
-function dropBasket(idOwner)
+function dropBasketCreateCommand(idOwner)
 {
-    console.log("ici")
     $.ajax({
         type: 'GET',
-        url: '/commandDropBasket?idOwner='+ idOwner
-    });
+        url: '/dropBasket?idOwner='+ idOwner
+    }).then((result) => {
+        $.ajax({
+            type: 'POST',
+            url: '/createCommand?idOwner='+ idOwner
+        }).then((result) => {
+            window.location = '/';
+        })
+    })
+
 }

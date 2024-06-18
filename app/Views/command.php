@@ -22,17 +22,22 @@
 
 <section class="mid-page">
     <h1>Récap' de ma commande</h1>
-        <h4><?=$commands['date']?> | <?=$commands['hour']?> : Commande N°<?=$commands['id']?> ----- <?=$commands['price']?>€</h4>
+        <h4><?=$commands['date']?> | <?=$commands['hour']?> ----- <?=$commands['price']?>€</h4>
         <?php for($i = 0 ; $i < count($articles) ; $i++): ?>
-        <h5> x<?=$quantities[$i]?> <?=$articles[$i]->getName()?> | <?=$articles[$i]->getDescription()?></h5>
-        <?php endfor; ?>
 
+            <?php if(get_class($articles[$i]) == Models\Menu::class) :?>
+                <h5> x<?=$quantities[$i]?> <?=$articles[$i]->getName()?> | <?=$articles[$i]->getDescription() ?? false ?></h5>
+            <?php else : ?>
+                <h5> x<?=$quantities[$i]?> <?=$articles[$i]->getName()?></h5>
+            <?php endif; ?>
+
+        <?php endfor; ?>
     <hr>
     <br>
 
     <h6>Assurez-vous que l'ensemble des données présentes au-dessus sont valides <span>avant de procéder au paiement</span></h6>
 
-    <a href="/"><button onclick="dropBasket(<?=$_GET['id']?>)" id="submit">PAYER MA COMMANDE</button></a>
+    <button onclick="dropBasketCreateCommand(<?=$_GET['id']?>)" id="submit">PAYER MA COMMANDE</button>
 
     <p>BangerTacos décline toute responsabilité en cas de paiement avec une carte volée</p>
 

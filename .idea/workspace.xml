@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be394c4-40bb-4d19-a05f-cbcab5b526e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/CarteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CarteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/CommandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CommandController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/scripts/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/scripts/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/scripts/carte.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/carte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/scripts/connection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/basket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Public/styles/carte.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/styles/carte.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/carte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/carte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Public/scripts/command.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Public/scripts/command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Common/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Common/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/command.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,33 +42,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
-      <path value="$PROJECT_DIR$/build/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/build/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/build/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/build/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/build/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/build/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/build/vendor/mistic100/randomcolor" />
       <path value="$PROJECT_DIR$/build/vendor/composer" />
     </include_path>
   </component>
@@ -95,7 +59,7 @@
     &quot;PHPUnit.RegisterTest.test_isFirstNameValid.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos/app/Public/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cypri/OneDrive/Bureau/BangerTacos&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -180,6 +144,8 @@
       <workItem from="1718641783631" duration="1239000" />
       <workItem from="1718698689111" duration="4215000" />
       <workItem from="1718713505315" duration="10350000" />
+      <workItem from="1718738681539" duration="25000" />
+      <workItem from="1718738709912" duration="4230000" />
     </task>
     <servers />
   </component>

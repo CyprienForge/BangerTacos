@@ -1,3 +1,4 @@
+<?php if(!empty($_SESSION['id'])) $id = $_SESSION['id']; ?>
 <a href="/"><img id="logo" src="http://127.0.0.1:8000/images/logo.png" alt="Logo de BangerTacos"></a>
 <img id="iconMenu" src="http://127.0.0.1:8000/images/burgerMenu.png" alt="Icon d'hamburger pour le menu déroulant">
 
