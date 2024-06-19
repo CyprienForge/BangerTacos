@@ -1,3 +1,4 @@
+<?php session_start(); if(!empty($_SESSION['id'])) $id = $_SESSION['id']; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

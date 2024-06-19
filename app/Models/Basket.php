@@ -129,13 +129,16 @@ class Basket extends Model
         $query->execute([$idOwner, $idProduct]);
     }
 
-    public function dropBasket(int $idOwner) : void
+    public function dropBasket(int $idOwner, string $time, float $price, string $date) : void
     {
         $query = $this->getPDO()->prepare("
             DELETE FROM {$this->table}
             WHERE idOwner = ?
         ");
         $query->execute([$idOwner]);
+
+        $command = new Command();
+        $command->createCommand($idOwner, $time, $price, $date);
     }
 
     public function getPriceCurrentBasket(int $idOwner) : float

@@ -38,21 +38,14 @@ class CommandController implements IController
 
     public function dropBasket() : void
     {
+        $time = $_GET['time'];
+        $time = str_replace('_', ':', $time);
         $idOwner = $_GET['idOwner'];
         $basket = new Basket();
-
-        $basket->dropBasket($idOwner);
-    }
-
-    public function createCommand() : void
-    {
-        $idOwner = $_GET['idOwner'];
-        $basket = new Basket();
-        $command = new Command();
 
         $date = date('Y-m-d');
         $price = $basket->getPriceCurrentBasket($idOwner);
 
-        $command->createCommand($idOwner, $_POST['time'], $price, $date);
+        $basket->dropBasket($idOwner, $time, $price, $date);
     }
 }

@@ -1,15 +1,9 @@
-function dropBasketCreateCommand(idOwner)
+function dropBasketCreateCommand(idOwner, time)
 {
     $.ajax({
         type: 'GET',
-        url: '/dropBasket?idOwner='+ idOwner
-    }).then((result) => {
-        $.ajax({
-            type: 'POST',
-            url: '/createCommand?idOwner='+ idOwner
-        }).then((result) => {
-            window.location = '/';
-        })
+        url: '/dropBasket?idOwner=' + idOwner + '&time=' + time
+    }).then((response) => {
+        window.location = '/';
     })
-
 }

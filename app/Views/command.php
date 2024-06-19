@@ -37,7 +37,9 @@
 
     <h6>Assurez-vous que l'ensemble des données présentes au-dessus sont valides <span>avant de procéder au paiement</span></h6>
 
-    <button onclick="dropBasketCreateCommand(<?=$_GET['id']?>)" id="submit">PAYER MA COMMANDE</button>
+    <?php $id = $_GET['id'] ; $hour = str_replace(':', '_', $commands['hour']);?>
+
+    <button onclick="dropBasketCreateCommand(<?=$id?>,<?=$hour?>)" id="submit">PAYER MA COMMANDE</button>
 
     <p>BangerTacos décline toute responsabilité en cas de paiement avec une carte volée</p>
 

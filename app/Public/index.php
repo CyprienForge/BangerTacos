@@ -25,7 +25,6 @@ $router->register('POST', '/basket', ['Controllers\BasketController','index']);
 $router->register('GET', '/basketDelete', ['Controllers\BasketController','delete']);
 $router->register('POST', '/command', ['Controllers\CommandController','index']);
 $router->register('GET', '/dropBasket', ['Controllers\CommandController','dropBasket']);
-$router->register('POST', '/createCommand', ['Controllers\CommandController','createCommand']);
 $router->register('GET', '/disconnection', ['Controllers\AccountController','disconnection']);
 
 try
