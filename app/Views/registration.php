@@ -1,9 +1,11 @@
+<?php session_start(); if(!empty($_SESSION['id'])) $id = $_SESSION['id']; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/style.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/styles/connection.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="http://127.0.0.1:8000/scripts/burger-menu.js" defer></script>
     <title>BangerTacos</title>
 </head>
@@ -46,10 +48,34 @@
                                  $_POST['password'], $_POST['repeatPassword']);
         if(!$register->register())
         {
-            echo '<p>Inscription échouée !</p>';
+            echo
+            "<script>swal({
+                title: 'Inscription échouée !',
+                text: 'Veuillez vérifier que les informations rentrées sont correctes', 
+                icon: 'error',
+                button: {
+                    text: 'D\'accord',
+                    className: 'buttonRedirect',
+                }
+                }).then(function(){
+                   window.location = '/registration'; 
+                });
+            </script>";
             exit(1);
         }
-        echo '<p>Inscription réussie !</p>';
+        echo
+        "<script>swal({
+            title: 'Inscrit !',
+            text: 'Bienvenue à toi', 
+            icon: 'success',
+            button: {
+                text: 'Merci',
+                className: 'buttonRedirect',
+            }
+            }).then(function(){
+               window.location = '/'; 
+            });
+        </script>";
     }
 ?>
 

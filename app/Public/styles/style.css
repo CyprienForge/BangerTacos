@@ -8,11 +8,6 @@ body{
 
 /* PARTIE Header */
 
-header #logo {
-    width: 22vw;
-    float: left;
-}
-
 #iconMenu {
     display: none;
     margin-top: 1vh;
@@ -94,7 +89,12 @@ nav ul{
     margin-top: -2vw;
 }
 
-@media (max-width: 650px){
+@media (max-width: 1000px){
+
+    header #logo {
+        width: 22vw;
+        float: left;
+    }
 
     #iconMenu{
         display: block;
@@ -129,6 +129,23 @@ nav ul{
     }
     nav.active #quit {
         visibility: visible;
+    }
+}
+
+
+@media (min-width: 1000px){
+    header{
+        height: 4vw;
+    }
+    header #logo{
+        float: left;
+        width: 7vw;
+    }
+    nav img{
+        display: none;
+    }
+    li a{
+        font-size: 2vw;
     }
 }
 

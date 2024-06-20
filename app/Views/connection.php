@@ -38,7 +38,19 @@
 
         if(!$loger->login())
         {
-            echo '<p>Connexion échouée !</p>';
+            echo
+                "<script>swal({
+                title: 'Connexion échouée !',
+                text: 'Veuillez réessayer avec une combinaison email/mot de passe valide', 
+                icon: 'error',
+                button: {
+                    text: 'D\'accord',
+                    className: 'buttonRedirect',
+                }
+                }).then(function(){
+                   window.location = '/connection'; 
+                });
+            </script>";
             exit(1);
         }
 

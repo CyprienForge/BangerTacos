@@ -16,8 +16,19 @@ class Register
         $user = new User();
         $user->addUser($this->firstName, $this->surName, $this->email, $this->password, $this->phone);
 
+        session_start();
+        $_SESSION['id'] = $this->getUserId();
+
         return true;
     }
+
+    public function getUserId() : int
+    {
+        $user = new User();
+
+        return $id = $user->getUserId($this->email);
+    }
+
     public function isRegisterValid() : bool
     {
         return $this->isFirstNameValid()

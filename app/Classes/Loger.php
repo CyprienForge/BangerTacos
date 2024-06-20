@@ -20,7 +20,6 @@ class Loger
         if(!$this->isLoginValid()) return false;
 
         session_start();
-        $_SESSION['email'] = $this->email;
         $_SESSION['id'] = $this->getUserId();
 
         return true;
