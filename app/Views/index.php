@@ -15,7 +15,7 @@
 
     <section class="sub-header">
         <img src="http://127.0.0.1:8000/images/backgroundIndex.png" alt="Immage de fond représentant un kebab bien fournie">
-        <h1><span>BAN</span>GER TA<span>COS</span></h1>
+        <h1><span>BAN</span>GER <br>TA<span>COS</span></h1>
     </section>
 
     <section class="mid-page">

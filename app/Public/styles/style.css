@@ -141,11 +141,35 @@ nav ul{
         float: left;
         width: 7vw;
     }
+    nav{
+        margin-left: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        margin-top: 3vw;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
     nav img{
         display: none;
     }
-    li a{
-        font-size: 2vw;
+    #link{
+        font-size: 1.25vw;
+        width: 20%;
+        transition: 0.25s all ease;
+    }
+    #link:hover::after{
+        content: "";
+        display: block;
+        width: 40%;
+        height: 0.5vh;
+        border-radius: 30px;
+        background-color: #FFD362;
+    }
+    #link:hover{
+        color: #FFD362;
     }
 }
 

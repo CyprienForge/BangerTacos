@@ -9,9 +9,9 @@ This is how this project was born !
 
 ## Technologies used
 
-Front-end : HTML5/CSS3/JavaScript (with a bit of JQuery)  
+Front-end : HTML5/CSS3/JavaScript (with a bit of JQuery, MobileFirst)  
 Back-End : PHP8/MySQL (DMBS : PHPMyAdmin)  
-Design : Figma  
+Design : Figma (See design into wiki)  
 Virtualization : Docker  
 Versionning : Git with GitHub  
 CI : GitHub Actions
