@@ -1,4 +1,4 @@
-# BangerTacos 
+# BangerTacos Mobile First
 
 ## Context
 
@@ -6,6 +6,10 @@ During my first year of study in Informatique Bachelor at IUT Clermont-Auvergne,
 To apply this news skills, during May, I have had an idea. I will develop a website for a fictif restaurateur. 
 
 This is how this project was born !
+
+## Designs
+
+Wiki : https://github.com/CyprienForge/BangerTacos/wiki
 
 ## Technologies used
 
