@@ -1,5 +1,12 @@
 # BangerTacos Mobile First
 
+⚠️⚠️⚠️
+
+The front-end of the project was only created for the mobile version, if you want to benefit from the best experience I advise you to reduce the size of the window or to use the console via F12.
+Happy reading !
+
+⚠️⚠️⚠️
+
 ## Context
 
 During my first year of study in Informatique Bachelor at IUT Clermont-Auvergne, I learnt myself PHP8. 
